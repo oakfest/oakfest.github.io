@@ -6,10 +6,12 @@ before_install:
 install:
   - npm install
   - npm run build
+  - rm .gitignore
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN 
   keep-history: true
+  target-branch: master
   on:
-    branch: master
+    branch: develop
