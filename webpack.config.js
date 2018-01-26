@@ -65,7 +65,8 @@ module.exports = function (env) {
             }),
             new HtmlWebpackPlugin({
                 filename: __dirname + '/index.html',
-                template: __dirname + '/src/index.ejs'
+                template: __dirname + '/src/index.ejs',
+                loader: 'ejs-loader'
             })
 
         ].concat(pages.map(page => {

@@ -1,4 +1,32 @@
-body {
-  background:url('../images/logos.jpg') repeat;
-  background-size: cover;
+@import '_colors.scss';
+@import '_nav.scss';
+@import '_images.scss';
+
+body, html {
+  font-family: sans-serif;
+  background-color: $secondary;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  color: $text;
+  height: 100%;
 }
+
+section, footer {
+  display: block;
+  padding: 20px;
+}
+
+.content {
+  display: inline-block;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbo {
+  height: 500px;
+}
+

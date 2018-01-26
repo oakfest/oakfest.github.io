@@ -1,0 +1,22 @@
+$text: #fff;
+$primary: #224e55;
+$primary_lighter: #316468;
+$secondary: #ce523f;
+$compliment: #ebc863;
+$none: #fff;
+
+.primary {
+  background-color: $primary;
+}
+
+.secondary {
+  background-color: $secondary;
+}
+
+.compliment {
+  background-color: $compliment;
+}
+
+.none {
+  background-color: $none;
+}
