@@ -15,6 +15,10 @@ install:
   - npm install
   - npm run build
   - rm .gitignore
+  - rm src -r
+  - rm node_modules -r
+  - rm package.json
+  - rm webpack.config.js
 
 deploy:
   provider: pages

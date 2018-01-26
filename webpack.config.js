@@ -9,6 +9,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const dist = path.resolve(__dirname, 'assets/dist');
 
+const pages = [
+
+];
 
 module.exports = function (env) {
     return {
@@ -49,8 +52,8 @@ module.exports = function (env) {
         },
 
         plugins: [
-            new CleanWebpackPlugin(['dist'], {
-                root: __dirname + '/assets'
+            new CleanWebpackPlugin(['assets/dist'].concat(pages), {
+                root: __dirname + '/'
             }),
             new ManifestPlugin(),
             new MinifyPlugin({}, {
@@ -64,6 +67,14 @@ module.exports = function (env) {
                 filename: __dirname + '/index.html',
                 template: __dirname + '/src/index.ejs'
             })
-        ]
+
+        ].concat(pages.map(page => {
+
+            // generate static page folders for fancy urls
+            return new HtmlWebpackPlugin({
+                filename: __dirname + '/' + page + '/index.html',
+                template: __dirname + '/src/' + page + '.ejs'
+            })
+        }))
     }
 };

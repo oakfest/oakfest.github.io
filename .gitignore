@@ -1,4 +1,9 @@
-/node_modules
-/.idea
-/assets/dist
-index.html
+*
+!src/
+!src/*
+!.gitignore
+!LICENSE
+!.README.md
+!webpack.config.js
+!package.json
+!.travis.yml
