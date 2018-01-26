@@ -3,7 +3,7 @@
 !src/*
 !.gitignore
 !LICENSE
-!.README.md
+!README.md
 !webpack.config.js
 !package.json
 !.travis.yml
