@@ -20,7 +20,6 @@
     "webpack-manifest-plugin": "^1.3.2"
   },
   "scripts": {
-    "test": "echo \"No tests specified\" && exit 0",
     "build": "webpack",
     "watch": "webpack --watch"
   },
