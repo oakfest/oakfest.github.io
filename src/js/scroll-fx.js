@@ -1,14 +1,22 @@
 export default class {
     constructor(ops) {
         this.spotlight = document.getElementById(ops.spotlight);
+        this.nav = document.getElementById(ops.nav);
+
         this.one = this.spotlight.childNodes[1];
         this.two = this.spotlight.childNodes[3];
     }
 
     doFx(x, y) {
-        y = Math.min(y, 75);
-        this.rotate(this.one, y - 75);
-        this.rotate(this.two, 75 - y);
+        if (this.nav) {
+            this.nav.className = y > 20 ? 'collapsed' : '';
+        }
+
+        if (this.one && this.two) {
+            y = Math.min(y, 75);
+            this.rotate(this.one, y - 75);
+            this.rotate(this.two, 75 - y);
+        }
     }
 
     rotate(el, deg) {
@@ -20,10 +28,10 @@ export default class {
             b = -deg + '%';
         }
 
-        el.style.msClipPath = 'polygon(0 ' + a + ', 100% ' + b +', 100% 100%, 0% 100%';
-        el.style.mozClipPath = 'polygon(0 ' + a + ', 100% ' + b +', 100% 100%, 0% 100%';
-        el.style.webkitClipPath = 'polygon(0 ' + a + ', 100% ' + b +', 100% 100%, 0% 100%';
-        el.style.clipPath = 'polygon(0 ' + a + ', 100% ' + b +', 100% 100%, 0% 100%'
+        el.style.msClipPath = 'polygon(0 ' + a + ', 100% ' + b + ', 100% 100%, 0% 100%';
+        el.style.mozClipPath = 'polygon(0 ' + a + ', 100% ' + b + ', 100% 100%, 0% 100%';
+        el.style.webkitClipPath = 'polygon(0 ' + a + ', 100% ' + b + ', 100% 100%, 0% 100%';
+        el.style.clipPath = 'polygon(0 ' + a + ', 100% ' + b + ', 100% 100%, 0% 100%'
     }
 
     mount() {

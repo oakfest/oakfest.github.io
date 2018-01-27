@@ -1,25 +1,71 @@
-<%= require('html-loader!./design/header.ejs') %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oakfest</title>
 
-<section class="compliment jumbo">
-    <div id="spotlights">
-        <div class="one"></div>
-        <div class="two"></div>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<nav id="nav">
+    <div class="nav-bar">
+        <ul class="left-logo">
+            <li class="oak-fest"><a href="#">[oakfest]</a></li>
+            <li class="treehouse"><a href="#">[treehouse banner here]</a></li>
+        </ul>
+        <ul class="buttons">
+            <li><a href="#" class="active">Tickets</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#bands">The Bands</a></li>
+            <li><a href="#venue">The Venue</a></li>
+        </ul>
     </div>
-</section>
 
-<section class="secondary">
+    <div class="nav-logo">
+        <div class="logo"></div>
+    </div>
+</nav>
+<div class="content">
 
-</section>
+    <section class="compliment jumbo">
+        <div id="spotlights">
+            <div class="one"></div>
+            <div id="about" class="two"></div>
+        </div>
+    </section>
 
-<section class="primary">
+    <section class="secondary">
+        // info about the event
+    </section>
 
-</section>
+    <section id="bands" class="primary center band">
+        <div class="future">
+            <div class="shim"></div>
+        </div>
+        <div class="logo future-logo"></div>
+    </section>
 
-<section class="primary center">
-    <div class="image future-logo"></div>
-</section>
+    <section class="primary center band">
+        <div class="vega">
+            <div class="shim"></div>
+        </div>
+        <div class="logo vega-logo"></div>
+    </section>
 
-<section class="primary center">
-    <div class="image vega-logo"></div>
-</section>
-<%= require('html-loader!./design/footer.ejs') %>
+    <section class="primary">
+        // other bands
+    </section>
+
+    <section id="venue" class="none">
+        <div id="map"></div>
+    </section>
+</div>
+
+<footer class="secondary">
+    Footer
+</footer>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOXDwVppT9-Emzzh3h6VCeJPtXxR181z0&callback=initMap"></script>
+</body>
+</html>

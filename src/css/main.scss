@@ -7,10 +7,10 @@ body, html {
   font-family: sans-serif;
   background-color: $secondary;
   padding: 0;
+  height: 100%;
   width: 100%;
   margin: 0;
   color: $text;
-  height: 100%;
 }
 
 section, footer {
@@ -19,8 +19,27 @@ section, footer {
   padding: 20px;
 }
 
+.band {
+  height: 400px;
+  padding: 0 !important;
+  text-align: center;
+  vertical-align: middle;
+
+  .logo {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
 .content {
   display: inline-block;
+  height:100%;
   width: 100%;
 }
 
@@ -29,6 +48,16 @@ section, footer {
 }
 
 .jumbo {
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#venue {
   height: 500px;
+  padding: 0 !important;
 }
 

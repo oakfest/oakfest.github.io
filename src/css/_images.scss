@@ -5,20 +5,46 @@
   width: 100%;
 }
 
+.vega {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background: url('../images/vega-back.jpg') no-repeat center;
+  background-position-y: 25%;
+  background-size: cover;
+
+  .shim {
+    background-color: $primary;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.future {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background: url('../images/future-back2.jpg') no-repeat center;
+  background-size: cover;
+
+  .shim {
+    background-color: $primary;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .vega-logo {
   background: url('../images/vega.png') no-repeat center;
   background-size: contain;
-  height: 100px;
-  width: 100%;
 }
 
 .future-logo {
   background: url('../images/future.png') no-repeat center;
   background-size: contain;
-  height: 100px;
-  width: 100%;
-}
 
-.image {
-  display: inline-block;
 }
