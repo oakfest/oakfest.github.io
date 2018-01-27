@@ -42,7 +42,7 @@ export default class {
             isScrolling = true;
         });
 
-        setInterval(function () {
+        setInterval(() => {
             if (isScrolling) {
                 isScrolling = false;
 

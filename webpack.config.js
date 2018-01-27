@@ -35,7 +35,7 @@ module.exports = function (env) {
                     use: {
                         loader: 'babel-loader',
                         query: {
-                            presets: ['es2015']
+                            "presets": ["@babel/preset-env"]
                         }
                     }
                 },
