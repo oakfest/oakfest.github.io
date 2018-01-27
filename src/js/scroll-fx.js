@@ -13,9 +13,9 @@ export default class {
         }
 
         if (this.one && this.two) {
-            y = Math.min(y, 75);
-            this.rotate(this.one, y - 75);
-            this.rotate(this.two, 75 - y);
+            const wave = (y) => 75 * Math.sin(y);
+            this.rotate(this.one, wave(y / 100) - 75);
+            this.rotate(this.two, 75 - wave(y / 90));
         }
     }
 

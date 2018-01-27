@@ -16,13 +16,14 @@
 
   .one {
     clip-path: polygon(0 0, 100% 75%, 100% 100%, 0% 100%);
+    top: 50px;
     left:0;
-    top: 20px;
+
   }
 
   .two {
     clip-path: polygon(0 75%, 100% 0%, 100% 100%, 0% 100%);
-    top:0;
     right:0;
+    top:0;
   }
 }
