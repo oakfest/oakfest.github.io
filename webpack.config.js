@@ -30,6 +30,16 @@ module.exports = function (env) {
 
             rules: [
                 {
+                    test: /\.js$/,
+                    exclude: /(node_modules|assets)/,
+                    use: {
+                        loader: 'babel-loader',
+                        query: {
+                            presets: ['es2015']
+                        }
+                    }
+                },
+                {
                     test: /\.css$/,
                     loader: ExtractTextPlugin.extract({
                         use: 'css-loader?-url'
