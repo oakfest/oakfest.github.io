@@ -63,24 +63,11 @@ section, footer {
   min-height: 600px;
   padding: 0;
 
-  @media screen and (max-width: 800px) {
-    padding-top: 20px;
-  }
-
   .yelling {
     width: 500px;
     height: 500px;
     padding-top: 200px;
     margin: auto;
-
-    @media screen and (max-width: 800px) {
-      font-size: 1em;
-      width: 100%;
-      text-align: center;
-      span {
-        text-align: center !important;
-      }
-    }
 
     span {
       text-transform: uppercase;
@@ -93,25 +80,16 @@ section, footer {
 
     .day {
       font-size: 5em;
-      @media screen and (max-width: 800px) {
-        font-size: 2em;
-      }
       letter-spacing: 10px;
     }
 
     .date {
       font-size: 3em;
-      @media screen and (max-width: 800px) {
-        font-size: 1em;
-      }
       letter-spacing: 10px;
     }
 
     .pattys {
       letter-spacing: 15px;
-      @media screen and (max-width: 800px) {
-        letter-spacing: 8px;
-      }
     }
 
     .info {
@@ -121,18 +99,8 @@ section, footer {
       div {
         display: inline-block;
       }
-      @media screen and (max-width: 800px) {
-        div{
-          display:block;
-        }
-      }
       .tickets {
         display: none;
-        @media screen and (max-width: 800px) {
-          display: block;
-          margin-top: 50px;
-          width: 100%;
-        }
       }
     }
   }
@@ -150,10 +118,6 @@ section, footer {
 
 .about-content {
   padding-top: 0;
-  @media screen and (min-width: 800px) {
-    margin-left: 25%;
-    margin-right: 25%;
-  }
 }
 
 #map {
@@ -185,7 +149,45 @@ footer {
   }
 }
 
+@media screen and (min-width: 800px) {
+  .about-content {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  .jumbo {
+    padding-top: 20px;
+
+    .yelling {
+      font-size: 1em;
+      width: 100%;
+      text-align: center;
+      span {
+        text-align: center !important;
+      }
+      .day {
+        font-size: 2em;
+      }
+      .date {
+        font-size: 1em;
+      }
+      .pattys {
+        letter-spacing: 8px;
+      }
+      .info {
+        div {
+          display: block;
+        }
+        .tickets {
+          display: block;
+          margin-top: 50px;
+          width: 100%;
+        }
+      }
+    }
+  }
   footer {
     white-space: normal;
     text-align: center;
