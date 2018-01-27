@@ -16,7 +16,19 @@ body, html {
 section, footer {
   position: relative;
   display: block;
-  padding: 20px;
+  padding: 50px;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 .band {
@@ -24,6 +36,15 @@ section, footer {
   padding: 0 !important;
   text-align: center;
   vertical-align: middle;
+
+  &:hover {
+    .shim {
+      opacity: 0;
+    }
+    .logo {
+      width: 500px !important;
+    }
+  }
 
   .logo {
     position: absolute;
@@ -37,18 +58,60 @@ section, footer {
   }
 }
 
-.content {
-  display: inline-block;
-  height:100%;
-  width: 100%;
-}
-
-.center {
-  text-align: center;
-}
-
 .jumbo {
   height: 100%;
+
+  .yelling {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    padding-top: 200px;
+    margin:auto;
+
+    span {
+      text-transform: uppercase;
+      margin: 5px;
+      width: 100%;
+      display: block;
+      text-align: justify;
+      font-size: 2em;
+    }
+
+    .day {
+      font-size: 5em;
+      letter-spacing: 10px;
+    }
+
+    .date {
+      font-size: 3em;
+      letter-spacing: 10px;
+    }
+
+    .pattys {
+      letter-spacing: 15px;
+    }
+
+    .info {
+      font-size: 1em;
+      letter-spacing: 1.6px;
+    }
+  }
+
+}
+
+#about {
+  text-align: center;
+  h1 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+.about-content {
+  padding-top: 0;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 #map {
@@ -61,3 +124,32 @@ section, footer {
   padding: 0 !important;
 }
 
+footer {
+  white-space: nowrap;
+  .col {
+    display: inline-block;
+    height: 200px;
+  }
+  .one {
+    width: 25%;
+  }
+
+  .two {
+    width: 50%;
+  }
+
+  .three {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    white-space: normal;
+    text-align: center;
+    .col {
+      text-align: center !important;
+      width: 100% !important;
+    }
+  }
+}
