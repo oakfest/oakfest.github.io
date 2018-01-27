@@ -11,7 +11,7 @@ import Maps from './maps.js'
 // initialize google maps
 window.initMap = () => new Maps({
     el: 'map',
-    center: {lat: 30.8357561, lng: -83.9803326},
+    center: {lat: 30.8357582, lng: -83.9814574},
     marker: {
         position: {lat: 30.835711, lng: -83.981562},
         title: 'Thomasville Amphitheatre'

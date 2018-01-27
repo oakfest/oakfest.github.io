@@ -15,7 +15,14 @@ nav {
 
     ul {
       list-style: none;
+
       margin: 40px;
+      @media screen and (max-width: 1200px) {
+        margin: 30px;
+      }
+      @media screen and (max-width: 800px) {
+        margin: 20px;
+      }
 
       li {
         display: inline-block;
@@ -99,38 +106,62 @@ nav {
 }
 
 @media screen and (max-width: 1200px) {
-  .nav-logo {
-    display: none !important;
-  }
-}
 
-@media screen and (max-width: 1200px) {
-  ul {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  .hide-sm {
+    display: none;
   }
-  .nav-logo {
-    display: none !important;
-  }
-  .left-logo {
-    .oak-fest {
-      display: inline-block;
+  .collapsed {
+    .hide-sm {
+      display: block;
+    }
+    .left-logo {
+      .treehouse {
+        display: none !important;
+      }
+      .oak-fest {
+        display: block;
+      }
     }
   }
 }
 
 @media screen and (max-width: 800px) {
-  .left-logo {
-    .treehouse {
-      display: none !important;
+  .hide-xs {
+    display: none !important;
+  }
+  nav {
+    ul {
+      display: none;
+    }
+  }
+  .collapsed {
+    nav {
+      ul {
+        display: block;
+      }
+    }
+    .buttons {
+      margin: 30px;
+      display: block;
     }
   }
 }
 
 @media screen and (max-width: 600px) {
-  .left-logo {
-    .oak-fest {
-      display: none !important;
+  .collapsed {
+    .left-logo {
+      .oak-fest {
+        display: none !important;
+      }
+    }
+    .buttons {
+      margin: 20px;
+      display: block;
+      padding-left: 0;
+      a {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
     }
   }
 }
