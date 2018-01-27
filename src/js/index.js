@@ -1,4 +1,3 @@
-
 import Fx from './scroll-fx.js'
 import Maps from './maps.js'
 
@@ -18,3 +17,7 @@ window.initMap = () => new Maps({
     },
     zoom: 19
 });
+
+if (window.mapInitialized) {
+    window.initMap();
+}
