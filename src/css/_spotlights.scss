@@ -1,0 +1,28 @@
+#spotlights {
+  position: absolute;
+  height: 30%;
+  bottom:0;
+  left:0;
+  width:100%;
+
+  div {
+    background-color: #ce523f;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    opacity: 0.9;
+    height:100%;
+  }
+
+  .one {
+    clip-path: polygon(0 0, 100% 75%, 100% 100%, 0% 100%);
+    left:0;
+    top: 20px;
+  }
+
+  .two {
+    clip-path: polygon(0 75%, 100% 0%, 100% 100%, 0% 100%);
+    top:0;
+    right:0;
+  }
+}
