@@ -70,7 +70,7 @@ module.exports = function (env) {
                 test: /\.min\./,
             }),
             new ExtractTextPlugin({
-                filename: '[name].bundle.css',
+                filename: '[name].[contenthash].css',
                 allChunks: true,
             }),
             new HtmlWebpackPlugin({
