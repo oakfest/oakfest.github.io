@@ -13,6 +13,10 @@ body, html {
   color: $text;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section, footer {
   position: relative;
   display: block;
@@ -42,7 +46,7 @@ section, footer {
       opacity: 0;
     }
     .logo {
-      width: 500px !important;
+      width: 300px !important;
     }
   }
 
