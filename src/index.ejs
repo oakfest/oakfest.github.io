@@ -24,7 +24,7 @@
             </li>
         </ul>
         <ul class="buttons">
-            <li><a href="#" class="active">Tickets</a></li>
+            <li><a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="active">Tickets</a></li>
             <li><a href="#about" class="hide-sm">About</a></li>
             <li><a href="#bands" class="hide-sm">The Bands</a></li>
             <li><a href="#venue" class="hide-sm">The Venue</a></li>
@@ -48,7 +48,7 @@
             <div class="hide-xs">|</div>
             <div>End 10:00 PM</div>
             <div class="tickets">
-                <a href="#" class="btn compliment active">
+                <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn compliment active">
                     Tickets
                 </a>
             </div>
@@ -57,25 +57,41 @@
     <div id="spotlights">
         <div class="one"></div>
         <div id="about" class="two">
-            <h1>About</h1>
+
         </div>
     </div>
 </section>
+<section>
+    <div class="about-content">
+        <h1>About</h1>
 
-<section class="secondary about-content">
-    <p>
-        The Kiwanis Club of Thomasville invites you to make a difference in the life of a child by
-        supporting our inaugural event and fundraiser, OakFest, which will be held on Saturday, March
-        17, 2018 from 4:00 p.m.-10:00 p.m at the new Amphitheater in Downtown Thomasville.
-        Our event is a full day of music, food, and fun! We will have bands from across the southeast,
-        featuring the Futurebirds and Vegabonds, local food trucks, plus a beer and wine garden, for all
-        your dining needs.
-    </p>
-    <p>
-        As members of the Kiwanis Club, our goal is to serve the children of our community in the best
-        ways possible: literacy, scholarships, and financial support to organizations like the Treehouse
-        to promote healthy and positive assistance to children.
-    </p>
+        <p>
+            The Kiwanis Club of Thomasville invites you to make a difference in the life of a child by
+            supporting our inaugural event and fundraiser, OakFest, which will be held on Saturday, March
+            17, 2018 from 4:00 p.m.-10:00 p.m at the new Amphitheater in Downtown Thomasville.
+        </p>
+        <p>
+            Our event is a full day of music, food, and fun! We will have bands from across the southeast,
+            featuring the Futurebirds and Vegabonds, local food trucks, plus a beer and wine garden, for all
+            your dining needs.
+        </p>
+        <p>
+            As members of the Kiwanis Club, our goal is to serve the children of our community in the best
+            ways possible: literacy, scholarships, and financial support to organizations like the Treehouse
+            to promote healthy and positive assistance to children.
+        </p>
+        <br/>
+        <p class="call-to-action">
+            <a href="http://www.signupgenius.com/go/4090f48aead22a7fa7-oakfest" class="btn btn-secondary active">
+                Volunteer
+            </a>
+
+            <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-secondary active">
+                Find Tickets
+            </a>
+        </p>
+        <br/>
+    </div>
 </section>
 
 <section id="bands" class="none center band">
@@ -97,7 +113,7 @@
 </section>
 
 
-<footer class="secondary">
+<footer class="secondary pad">
     <div class="col one left">
         <a href="http://http://treehousethomasville.org/" title="The Treehouse">
             <img src="<%= require('./images/treehouse_logo.png') %>" alt="The Treehouse"/>
@@ -109,12 +125,22 @@
         </a>
     </div>
     <div class="col three right">
-        <h1>contact us</h1>
+        <h1 class="right">contact us</h1>
         <p>[contact info]</p>
         <br/>
-        <a href="#" class="btn secondary active">Get Tickets</a>
+        <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-secondary active">Get
+            Tickets</a>
     </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ['Montserrat:400,900', 'Oswald:400,600']
+        }
+    });
+
+</script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOXDwVppT9-Emzzh3h6VCeJPtXxR181z0&callback=initMap"></script>
 </body>

@@ -9,8 +9,22 @@ $none: #fff;
   background-color: $primary;
 }
 
+.btn-primary {
+  background-color: $primary;
+  &:hover {
+    background-color: darken($primary, 10%)
+  }
+}
+
 .secondary {
   background-color: $secondary;
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  &:hover {
+    background-color: darken($secondary, 10%)
+  }
 }
 
 .compliment {
@@ -20,3 +34,4 @@ $none: #fff;
 .none {
   background-color: $none;
 }
+
