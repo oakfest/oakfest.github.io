@@ -27,6 +27,12 @@ $none: #fff;
   }
 }
 
+.btn-compliment-clear {
+  &:hover {
+    background-color: $compliment;
+  }
+}
+
 .compliment {
   background-color: $compliment;
 }
