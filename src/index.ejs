@@ -6,25 +6,28 @@
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Montserrat:400,900" rel="stylesheet">
+
 </head>
 <body>
 <nav id="nav">
     <div class="nav-bar">
-        <ul class="left-logo">
-            <li class="oak-fest">
+        <div class="left-logo">
+            <div class="oak-fest">
                 <a href="#" title="Back to Top">
                     <img src="<%= require('./images/logo_plain_white.png') %>" alt="Back to Top"/>
                 </a>
-            </li>
-            <li class="treehouse">
+            </div>
+            <div class="treehouse">
                 <a href="http://treehousethomasville.org">
                     <img src="<%= require('./images/benefit.png') %>"
                          alt="A benefit for The Treehouse by Kiwanis club of Thomasville."/>
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
         <ul class="buttons">
-            <li><a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="active">Tickets</a></li>
+            <li><a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="active hide-sm">Tickets</a>
+            </li>
             <li><a href="#about" class="hide-sm">About</a></li>
             <li><a href="#bands" class="hide-sm">The Bands</a></li>
             <li><a href="#venue" class="hide-sm">The Venue</a></li>
@@ -125,23 +128,22 @@
         </a>
     </div>
     <div class="col three right">
-        <h1 class="right">contact us</h1>
-        <p>[contact info]</p>
-        <br/>
-        <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-secondary active">Get
-            Tickets</a>
+        <div>
+            <h1 class="right">contact us</h1>
+            <p>[contact info]</p>
+            <br/>
+            <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-secondary active">Get
+                Tickets</a>
+        </div>
     </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-    WebFont.load({
-        google: {
-            families: ['Montserrat:400,900', 'Oswald:400,600']
-        }
-    });
 
-</script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOXDwVppT9-Emzzh3h6VCeJPtXxR181z0&callback=initMap"></script>
+<script type="text/javascript">
+    window.initMap = function () {
+        window.mapInitialized = true;
+    };
+</script>
 </body>
 </html>

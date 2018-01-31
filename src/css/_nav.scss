@@ -42,13 +42,14 @@ nav {
       max-width: 50%;
 
       img {
+        min-height: 100px;
         width: 75%;
       }
 
       .oak-fest {
         img {
           padding-top: 4px;
-          width: 30%;
+          width: 110px;
         }
 
       }
@@ -168,7 +169,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .collapsed {
     .left-logo {
       .oak-fest {
