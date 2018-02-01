@@ -6,9 +6,143 @@
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Montserrat:400,900" rel="stylesheet">
 
 </head>
 <body>
+<nav id="nav">
+    <div class="nav-bar">
+        <div class="left-logo">
+            <div class="oak-fest">
+                <a href="#" title="Back to Top">
+                    <img src="<%= require('./images/logo_plain_white.png') %>" alt="Back to Top"/>
+                </a>
+            </div>
+            <div class="treehouse">
+                <a href="http://treehousethomasville.org">
+                    <img src="<%= require('./images/benefit.png') %>"
+                         alt="A benefit for The Treehouse by Kiwanis club of Thomasville."/>
+                </a>
+            </div>
+        </div>
+        <ul class="buttons">
+            <li><a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="active hide-sm">Tickets</a>
+            </li>
+            <li><a href="#about" class="hide-sm">About</a></li>
+            <li><a href="#bands" class="hide-sm">The Bands</a></li>
+            <li><a href="#venue" class="hide-sm">The Venue</a></li>
+        </ul>
+    </div>
 
+    <div class="nav-logo">
+        <div class="logo"></div>
+    </div>
+</nav>
+<section class="compliment jumbo">
+    <div class="bg"></div>
+    <div class="yelling">
+        <span class="day">Saturday</span>
+        <span class="date">March 17 2018</span>
+        <span class="pattys">St.Patricks Day</span>
+        <div class="info">
+            <div>Doors 3:00pm</div>
+            <div class="hide-xs">|</div>
+            <div>First Band 4:00pm</div>
+            <div class="hide-xs">|</div>
+            <div>End 10:00 PM</div>
+            <div class="tickets">
+                <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-compliment-clear active">
+                    Tickets
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="spotlights">
+        <div class="one"></div>
+        <div id="about" class="two">
+
+        </div>
+    </div>
+</section>
+<section>
+    <div class="about-content">
+        <h1>About</h1>
+
+        <p>
+            The Kiwanis Club of Thomasville invites you to make a difference in the life of a child by
+            supporting our inaugural event and fundraiser, OakFest, which will be held on Saturday, March
+            17, 2018 from 4:00 p.m.-10:00 p.m at the new Amphitheater in Downtown Thomasville.
+        </p>
+        <p>
+            Our event is a full day of music, food, and fun! We will have bands from across the southeast,
+            featuring the Futurebirds and Vegabonds, local food trucks, plus a beer and wine garden, for all
+            your dining needs.
+        </p>
+        <p>
+            As members of the Kiwanis Club, our goal is to serve the children of our community in the best
+            ways possible: literacy, scholarships, and financial support to organizations like the Treehouse
+            to promote healthy and positive assistance to children.
+        </p>
+        <br/>
+        <p class="call-to-action">
+            <a href="http://www.signupgenius.com/go/4090f48aead22a7fa7-oakfest" class="btn btn-secondary active">
+                Volunteer
+            </a>
+
+            <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-secondary active">
+                Find Tickets
+            </a>
+        </p>
+        <br/>
+    </div>
+</section>
+
+<section id="bands" class="none center band">
+    <div class="future">
+        <div class="shim"></div>
+    </div>
+    <a class="logo future-logo" href="http://www.futurebirdsmusic.com/" title="Futurebirds"></a>
+</section>
+
+<section class="none center band">
+    <div class="vega">
+        <div class="shim"></div>
+    </div>
+    <a class="logo vega-logo" href="http://thevegabonds.com/" title="The Vegabonds"></a>
+</section>
+
+<section id="venue" class="none">
+    <div id="map"></div>
+</section>
+
+
+<footer class="secondary pad">
+    <div class="col one left">
+        <a href="http://http://treehousethomasville.org/" title="The Treehouse">
+            <img src="<%= require('./images/treehouse_logo.png') %>" alt="The Treehouse"/>
+        </a>
+    </div>
+    <div class="col two center">
+        <a href="#" title="Back to Top">
+            <img src="<%= require('./images/logo_plain_white.png') %>" alt="Back to Top"/>
+        </a>
+    </div>
+    <div class="col three right">
+        <div>
+            <h1 class="right">contact us</h1>
+            <p><a href="mailto:oakfestthomasville@gmail.com">Email</a></p>
+            <br/>
+            <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-secondary active">Get
+                Tickets</a>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    window.initMap = function () {
+        window.mapInitialized = true;
+    };
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOXDwVppT9-Emzzh3h6VCeJPtXxR181z0&callback=initMap"></script>
 </body>
 </html>

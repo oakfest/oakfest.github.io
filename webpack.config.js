@@ -9,6 +9,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const dist = path.resolve(__dirname, 'assets/dist');
 
+const pages = [
+
+];
 
 module.exports = function (env) {
     return {
@@ -26,6 +29,16 @@ module.exports = function (env) {
         module: {
 
             rules: [
+                {
+                    test: /\.js$/,
+                    exclude: /(node_modules|assets)/,
+                    use: {
+                        loader: 'babel-loader',
+                        query: {
+                            "presets": ["@babel/preset-env"]
+                        }
+                    }
+                },
                 {
                     test: /\.css$/,
                     loader: ExtractTextPlugin.extract({
@@ -49,21 +62,30 @@ module.exports = function (env) {
         },
 
         plugins: [
-            new CleanWebpackPlugin(['dist'], {
-                root: __dirname + '/assets'
+            new CleanWebpackPlugin(['assets/dist'].concat(pages), {
+                root: __dirname + '/'
             }),
             new ManifestPlugin(),
             new MinifyPlugin({}, {
                 test: /\.min\./,
             }),
             new ExtractTextPlugin({
-                filename: '[name].bundle.css',
+                filename: '[name].[contenthash].css',
                 allChunks: true,
             }),
             new HtmlWebpackPlugin({
                 filename: __dirname + '/index.html',
-                template: __dirname + '/src/index.ejs'
+                template: __dirname + '/src/index.ejs',
+                loader: 'ejs-loader'
             })
-        ]
+
+        ].concat(pages.map(page => {
+
+            // generate static page folders for fancy urls
+            return new HtmlWebpackPlugin({
+                filename: __dirname + '/' + page + '/index.html',
+                template: __dirname + '/src/' + page + '.ejs'
+            })
+        }))
     }
 };
