@@ -219,6 +219,15 @@ footer {
   position: relative;
 }
 
+.social {
+  a {
+    padding: 5px;
+    text-decoration: none !important;
+    &:hover {
+      color:#bd8e8e;
+    }
+  }
+}
 @media screen and (min-height: 800px) {
   .about-content {
     margin-top: -50px;

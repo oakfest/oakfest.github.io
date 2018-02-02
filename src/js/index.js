@@ -1,5 +1,6 @@
 import Fx from './scroll-fx.js'
 import Maps from './maps.js'
+import Track from './tracking.js'
 
 // initialize scrolling effects
 (new Fx({
@@ -21,3 +22,5 @@ window.initMap = () => new Maps({
 if (window.mapInitialized) {
     window.initMap();
 }
+
+Track.init();
