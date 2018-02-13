@@ -106,7 +106,7 @@ nav {
   .treehouse {
     display: none !important; }
   .nav-bar ul.buttons {
-    margin: 30px; }
+    margin: 20px; }
   .hide-sm {
     display: none; }
   .collapsed .hide-sm {
@@ -398,7 +398,8 @@ footer {
 .bronze {
   padding: 20px; }
   .bronze img {
-    width: 200px;
+    max-width: 200px;
+    max-height: 100px;
     padding: 10px; }
 
 @media screen and (min-height: 800px) {
