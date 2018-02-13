@@ -23,6 +23,9 @@
 .none {
   background-color: #fff; }
 
+.poster {
+  background-color: #4f8c59; }
+
 nav {
   position: absolute;
   display: block;
@@ -30,7 +33,8 @@ nav {
   height: 200px;
   vertical-align: middle;
   white-space: nowrap;
-  z-index: 1000; }
+  z-index: 1000;
+  top: 0; }
   nav .nav-bar {
     margin-top: 20px;
     height: 100px;
@@ -138,7 +142,7 @@ nav {
   background: url(/assets/dist/034d3f249545a0e7a796d4ae966e1710.png) no-repeat center;
   background-size: contain; }
 
-.jumbo .bg {
+.bg {
   background: url(/assets/dist/b67a05d60090f11fa7d401d531078620.jpg) no-repeat center;
   background-size: cover;
   position: absolute;
@@ -264,6 +268,23 @@ section, footer {
     right: 0;
     margin: auto; }
 
+.internal-jumbo {
+  padding-top: 200px;
+  min-height: 500px; }
+  .internal-jumbo h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 50px;
+    letter-spacing: 7.5px; }
+
+.yelling {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+
 .jumbo {
   height: 100%;
   min-height: 720px;
@@ -274,13 +295,8 @@ section, footer {
   .jumbo #spotlights {
     z-index: 50; }
   .jumbo .yelling {
-    position: relative;
-    z-index: 100;
-    width: 100%;
     height: 500px;
-    padding-top: 200px;
-    text-align: center;
-    margin: 0 auto; }
+    padding-top: 200px; }
     .jumbo .yelling span {
       text-transform: uppercase;
       text-align: justify;
@@ -374,6 +390,16 @@ footer {
   text-decoration: none !important; }
   .social a:hover {
     color: #bd8e8e; }
+
+.silver img {
+  width: 400px;
+  margin: auto; }
+
+.bronze {
+  padding: 20px; }
+  .bronze img {
+    width: 200px;
+    padding: 10px; }
 
 @media screen and (min-height: 800px) {
   .about-content {
