@@ -250,7 +250,8 @@ footer {
   padding: 20px;
 
   img {
-    width: 200px;
+    max-width: 200px;
+    max-height: 100px;
     padding: 10px;
   }
 }
