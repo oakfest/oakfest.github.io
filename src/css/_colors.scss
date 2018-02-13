@@ -4,6 +4,7 @@ $primary_lighter: #316468;
 $secondary: #cf5240;
 $compliment: #ebc863;
 $none: #fff;
+$poster: #4f8c59;
 
 .primary {
   background-color: $primary;
@@ -41,3 +42,6 @@ $none: #fff;
   background-color: $none;
 }
 
+.poster {
+  background-color: $poster;
+}

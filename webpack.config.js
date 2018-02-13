@@ -10,7 +10,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const dist = path.resolve(__dirname, 'assets/dist');
 
 const pages = [
-
+    'sponsors'
 ];
 
 module.exports = function (env) {

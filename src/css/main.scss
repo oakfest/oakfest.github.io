@@ -77,6 +77,26 @@ section, footer {
   }
 }
 
+.internal-jumbo {
+  padding-top: 200px;
+  min-height: 500px;
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 50px;
+    letter-spacing: 7.5px;
+  }
+
+}
+.yelling {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .jumbo {
   height: 100%;
   min-height: 720px;
@@ -90,14 +110,8 @@ section, footer {
     z-index: 50;
   }
   .yelling {
-    position: relative;
-    z-index: 100;
-    width: 100%;
     height: 500px;
     padding-top: 200px;
-    text-align: center;
-    margin: 0 auto;
-
     span {
       text-transform: uppercase;
       text-align: justify;
@@ -154,10 +168,6 @@ section, footer {
   }
 }
 
-#bands {
-
-}
-
 #map {
   width: 100%;
   height: 100%;
@@ -211,6 +221,7 @@ footer {
   }
 }
 
+
 .about-content {
   margin-left: 25%;
   margin-right: 25%;
@@ -226,6 +237,21 @@ footer {
     &:hover {
       color:#bd8e8e;
     }
+  }
+}
+.silver {
+  img {
+    width: 400px;
+    margin:auto;
+  }
+}
+
+.bronze {
+  padding: 20px;
+
+  img {
+    width: 200px;
+    padding: 10px;
   }
 }
 @media screen and (min-height: 800px) {

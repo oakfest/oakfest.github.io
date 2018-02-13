@@ -3,8 +3,11 @@ export default class {
         this.spotlight = document.getElementById(ops.spotlight);
         this.nav = document.getElementById(ops.nav);
 
-        this.one = this.spotlight.childNodes[1];
-        this.two = this.spotlight.childNodes[3];
+        if(this.spotlight) {
+            this.one = this.spotlight.childNodes[1];
+            this.two = this.spotlight.childNodes[3];
+        }
+
         this.bound = ops.bound || 50;
     }
 
