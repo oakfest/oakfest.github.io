@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Oakfest</title>
+    <title>Oakfest 2018 :: Futurebirds/Vegabonds March 17</title>
 
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
@@ -65,7 +65,7 @@
                 </a>
             </div>
             <div class="treehouse">
-                <a href="http://treehousethomasville.org" class="tag">
+                <a href="http://treehousethomasville.org" class="tag" rel="treehouse">
                     <img src="/assets/dist/8f3b7a79ae32cfa227b92be3f134540c.png"
                          alt="A benefit for The Treehouse by Kiwanis club of Thomasville."/>
                 </a>
@@ -73,11 +73,13 @@
         </div>
         <ul class="buttons">
             <li><a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765"
-                   class="active hide-sm tag">Tickets</a>
+                   class="active hide-sm tag"
+                   rel="tickets"
+                   title="Find Tickets">Tickets</a>
             </li>
-            <li><a href="#about" class="hide-sm">About</a></li>
-            <li><a href="#bands" class="hide-sm">The Bands</a></li>
-            <li><a href="/sponsors" class="hide-sm">Sponsors</a></li>
+            <li><a href="#about" class="hide-sm tag" rel="about">About</a></li>
+            <li><a href="#bands" class="hide-sm tag" rel="bands">The Bands</a></li>
+            <li><a href="/sponsors" class="hide-sm tag" rel="sponsors">Sponsors</a></li>
         </ul>
     </div>
 
@@ -99,6 +101,8 @@
             <div>End 10:00 PM</div>
             <div class="tickets">
                 <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765"
+                   title="Find Tickets"
+                   rel="tickets"
                    class="btn btn-compliment-clear active tag">
                     Tickets
                 </a>
@@ -132,11 +136,12 @@
         </p>
         <br/>
         <p class="call-to-action">
-            <a href="http://www.signupgenius.com/go/4090f48aead22a7fa7-oakfest" class="btn btn-secondary active tag">
+            <a href="http://www.signupgenius.com/go/4090f48aead22a7fa7-oakfest" class="btn btn-secondary active tag" rel="volunteer">
                 Volunteer
             </a>
 
-            <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-secondary active tag">
+            <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-secondary active tag"
+               rel="tickets" title="Find Tickets">
                 Find Tickets
             </a>
         </p>
@@ -148,14 +153,14 @@
     <div class="future">
         <div class="shim"></div>
     </div>
-    <a class="logo future-logo tag" href="http://www.futurebirdsmusic.com/" title="Futurebirds"></a>
+    <a class="logo future-logo tag" href="http://www.futurebirdsmusic.com/" title="Futurebirds" rel="futurebirds"></a>
 </section>
 
 <section class="none center band">
     <div class="vega">
         <div class="shim"></div>
     </div>
-    <a class="logo vega-logo tag" href="http://thevegabonds.com/" title="The Vegabonds"></a>
+    <a class="logo vega-logo tag" href="http://thevegabonds.com/" title="The Vegabonds" rel="vegabonds"></a>
 </section>
 
 <section id="venue" class="none">
@@ -164,7 +169,7 @@
 
 <footer class="secondary pad">
     <div class="col one left">
-        <a href="http://treehousethomasville.org/" title="The Treehouse" class="tag">
+        <a href="http://treehousethomasville.org/" title="The Treehouse" rel="treehouse" class="tag">
             <img src="/assets/dist/ed93c05231b6d32a02aba95cb685c93e.png" alt="The Treehouse"/>
         </a>
     </div>
@@ -177,16 +182,25 @@
         <div>
             <h1 class="right">contact us</h1>
             <p class="social">
-                <a href="https://www.facebook.com/events/1572297386157125" class="tag">
+                <a href="https://www.facebook.com/events/1572297386157125" class="tag" rel="facebook" title="Facebook">
                     <span class="fab fa-facebook-square fa-3x"></span>
                 </a>
-                <a href="mailto:contact@oakfest.net">
+                <a href="mailto:contact@oakfest.net" class="tag" rel="contact" title="Email Us">
                     <span class="far fa-envelope fa-3x"></span>
+                </a>
+                <a href="https://github.com/oakfest" class="tag" rel="github" title="Fork us on GitHub">
+                    <span class="fab fa-github fa-3x"></span>
+                </a>
+                <a href="https://open.spotify.com/user/g5joenmbzfrwkg4gg0760qfhm?si=oVgZibovS72ar6wNm9UPDQ" class="tag"
+                   rel="spotify" title="Follow us on Spotify">
+                    <span class="fab fa-spotify fa-3x"></span>
                 </a>
             </p>
             <br/>
-            <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-secondary active tag">Get
-                Tickets</a>
+            <a href="https://www.eventbrite.com/e/oakfest-tickets-41971793765" class="btn btn-secondary active tag"
+               rel="tickets" title="Find Tickets">
+                Get Tickets
+            </a>
         </div>
     </div>
 </footer>
@@ -197,5 +211,5 @@
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOXDwVppT9-Emzzh3h6VCeJPtXxR181z0&callback=initMap"></script>
-<script type="text/javascript" src="/assets/dist/oak.min.0cc89f527602397081c2.js"></script><script type="text/javascript" src="/assets/dist/main.f02eee811135d743a0c3.js"></script></body>
+<script type="text/javascript" src="/assets/dist/oak.min.c542c369ec347f3a8916.js"></script><script type="text/javascript" src="/assets/dist/main.f02eee811135d743a0c3.js"></script></body>
 </html>
