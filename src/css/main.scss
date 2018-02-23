@@ -240,19 +240,38 @@ footer {
   }
 }
 .silver {
-  img {
-    width: 400px;
-    margin:auto;
+  a {
+    display: inline-block;
+
+    img {
+      margin: auto;
+      max-width: 400px;
+      max-height: 200px;
+      padding: 10px;
+    }
+
+    &:hover {
+        background-color: #bd8e8e;
+    }
   }
+
 }
 
 .bronze {
   padding: 20px;
 
-  img {
-    max-width: 200px;
-    max-height: 100px;
-    padding: 10px;
+  a {
+    display: inline-block;
+
+    img {
+      max-width: 200px;
+      max-height: 100px;
+      padding: 10px;
+    }
+
+    &:hover {
+      background-color: #316468;
+    }
   }
 }
 @media screen and (min-height: 800px) {
