@@ -391,16 +391,26 @@ footer {
   .social a:hover {
     color: #bd8e8e; }
 
-.silver img {
-  width: 400px;
-  margin: auto; }
+.silver a {
+  display: inline-block; }
+  .silver a img {
+    margin: auto;
+    max-width: 400px;
+    max-height: 200px;
+    padding: 10px; }
+  .silver a:hover {
+    background-color: #bd8e8e; }
 
 .bronze {
   padding: 20px; }
-  .bronze img {
-    max-width: 200px;
-    max-height: 100px;
-    padding: 10px; }
+  .bronze a {
+    display: inline-block; }
+    .bronze a img {
+      max-width: 200px;
+      max-height: 100px;
+      padding: 10px; }
+    .bronze a:hover {
+      background-color: #316468; }
 
 @media screen and (min-height: 800px) {
   .about-content {
