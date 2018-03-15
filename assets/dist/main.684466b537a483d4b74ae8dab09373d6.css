@@ -411,7 +411,7 @@ footer {
       font-size: 2em; }
     .bronze a img, .bronze a span {
       max-width: 200px;
-      max-height: 100px;
+      max-height: 120px;
       padding: 10px; }
     .bronze a:hover {
       background-color: #316468; }
