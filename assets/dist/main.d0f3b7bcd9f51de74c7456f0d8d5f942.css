@@ -405,6 +405,9 @@ footer {
 
 .bronze {
   padding: 20px; }
+  .bronze ul {
+    list-style: none;
+    padding: 0; }
   .bronze a {
     display: inline-block; }
     .bronze a span {
