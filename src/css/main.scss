@@ -264,6 +264,11 @@ footer {
 .bronze {
   padding: 20px;
 
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
   a {
     display: inline-block;
 
