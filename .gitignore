@@ -1,6 +1,11 @@
 *
 !src/
 !src/*
+!2018/*
+!2018/assets/
+!2018/assets/dist/
+!2018/assets/dist/*
+!2018/sponsors/*
 !.gitignore
 !LICENSE
 !README.md
