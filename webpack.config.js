@@ -50,7 +50,7 @@ module.exports = function (env) {
                     loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
                 },
                 {
-                    test: /\.(png|jpg|gif|svg)$/,
+                    test: /\.(png|jpg|gif|svg|woff|woff2)$/,
                     use: [
                         {
                             loader: 'file-loader',

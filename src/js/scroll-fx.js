@@ -1,15 +1,6 @@
 export default class {
     constructor(ops) {
-        this.spotlight = document.getElementById(ops.spotlight);
         this.nav = document.getElementById(ops.nav);
-
-        if (this.spotlight) {
-            this.one = this.spotlight.childNodes[1];
-            this.two = this.spotlight.childNodes[3];
-        }
-
-        this.bound = ops.bound || 50;
-
         this.bodyRect = document.body.getBoundingClientRect();
         this.navRect = this.nav.getBoundingClientRect();
         this.navOffset = this.navRect.top - this.bodyRect.top;
@@ -18,13 +9,7 @@ export default class {
 
     doFx(x, y) {
         if (this.nav) {
-            this.nav.className = y > this.navOffset ? 'collapsed' : '';
-        }
-
-        if (this.one && this.two) {
-            const wave = (y) => this.bound * Math.cos(y);
-            this.rotate(this.one, -wave(y / 200));
-            this.rotate(this.two, wave(y / 180));
+            this.nav.className = y >= (this.navOffset + 45) ? 'collapsed' : '';
         }
     }
 

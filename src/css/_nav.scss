@@ -7,6 +7,7 @@ nav {
   z-index: 1000;
   bottom: 20px;
 
+
   .nav-bar {
     background-color: $primary_lighter;
     margin-top: 20px;
@@ -109,6 +110,7 @@ nav {
   }
 
   &.collapsed {
+    height: 100px;
     background-color: $primary_lighter;
     position: fixed;
     top: 0;

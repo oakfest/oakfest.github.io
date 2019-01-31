@@ -61,11 +61,16 @@ section, footer {
   top: 0;
   padding: 20px;
 
+  &:hover {
+    background-color: #fbdea7;
+  }
+
   .plain-logo {
     height: inherit;
     width: inherit;
     display: inline-block;
   }
+
 }
 
 .jumbo {
@@ -94,14 +99,15 @@ section, footer {
     .box {
       font-style: italic;
       width: 400px;
-      padding-top: 10px;
-      padding-right: 25px;
-      padding-left: 20px;
-      padding-bottom: 20px;
+      padding: 10px 25px 20px 20px;
+      text-decoration: none !important;
       display: inline-block;
       background-color: #90cac0;
-      clip-path: url("#bgPolygon");
-      -webkit-clip-path: polygon(0px 400px, 320px 400px, 400px 0px, 80px 0px);
+      clip-path: polygon(0px 400px, 320px 400px, 400px 0px, 80px 0px);
+
+      &:hover {
+        background-color: #146154;
+      }
     }
 
     span {
