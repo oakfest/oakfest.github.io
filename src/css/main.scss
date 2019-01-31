@@ -1,11 +1,11 @@
 @import '_colors.scss';
 @import '_nav.scss';
 @import '_images.scss';
-@import '_spotlights.scss';
+@import '../fonts/ostrich.scss';
 
 body, html {
   font-family: 'Montserrat', sans-serif;
-  background-color: $secondary;
+  background-color: #fff;
   padding: 0;
   height: 100%;
   width: 100%;
@@ -19,7 +19,8 @@ body {
 
 h1 {
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Ostrich Sans', 'Oswald', sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -50,51 +51,21 @@ section, footer {
   text-align: left;
 }
 
-.band {
-  height: 400px;
-  padding: 0 !important;
-  text-align: center;
-  vertical-align: middle;
+#corner-box {
+  background-color: $primary_lighter;
+  height: 230px;
+  width: 280px;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  padding: 20px;
 
-  &:hover {
-    .shim {
-      opacity: 0;
-    }
-    .logo {
-      width: 300px !important;
-    }
+  .plain-logo {
+    height: inherit;
+    width: inherit;
+    display: inline-block;
   }
-
-  .logo {
-    position: absolute;
-    text-align: center;
-    height: 100%;
-    width: 200px;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-}
-
-.internal-jumbo {
-  padding-top: 200px;
-  min-height: 500px;
-  h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    font-size: 4em;
-    line-height: 50px;
-    letter-spacing: 7.5px;
-  }
-
-}
-.yelling {
-  position: relative;
-  z-index: 100;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
 }
 
 .jumbo {
@@ -106,12 +77,33 @@ section, footer {
   .bg {
     z-index: 25;
   }
+
   #spotlights {
     z-index: 50;
   }
+
   .yelling {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
     height: 500px;
     padding-top: 200px;
+
+    .box {
+      font-style: italic;
+      width: 400px;
+      padding-top: 10px;
+      padding-right: 25px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      display: inline-block;
+      background-color: #90cac0;
+      clip-path: url("#bgPolygon");
+      -webkit-clip-path: polygon(0px 400px, 320px 400px, 400px 0px, 80px 0px);
+    }
+
     span {
       text-transform: uppercase;
       text-align: justify;
@@ -122,47 +114,100 @@ section, footer {
     }
 
     .day {
-      font-family: 'Montserrat', sans-serif;
+      padding-left: 16px;
+      font-family: 'Ostrich Sans', sans-serif;
       font-weight: 900;
       font-size: 5em;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
     }
 
     .date {
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Ostrich Sans', sans-serif;
       font-weight: 600;
       font-size: 4em;
-      line-height: 50px;
-      letter-spacing: 7.5px;
-    }
-
-    .pattys {
-      font-family: 'Oswald', sans-serif;
-      font-weight: 600;
-      line-height: 70px;
-      font-size: 2.5em;
-      letter-spacing: 14.5px;
+      line-height: 40px;
+      letter-spacing: 3px;
     }
 
     .info {
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Ostrich Sans', sans-serif;
       font-size: 1em;
       letter-spacing: 3px;
       text-align: center;
       text-transform: uppercase;
+
       div {
         display: inline-block;
       }
+
       .tickets {
         display: none;
       }
     }
   }
+}
+
+#about {
+  background-color: $secondary;
+  margin-top: -70px;
+  z-index: 100;
+
+  .about-content {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    z-index: 200;
+    position: relative;
+  }
+}
+
+.band {
+  height: 400px;
+  padding: 0 !important;
+  text-align: center;
+  vertical-align: middle;
+
+  &:hover {
+    .shim {
+      opacity: 0;
+    }
+
+    .logo {
+      width: 600px !important;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 400px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+.internal-jumbo {
+  padding-top: 200px;
+  min-height: 500px;
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 50px;
+    letter-spacing: 7.5px;
+  }
 
 }
 
+
 .call-to-action {
   text-align: center;
+
   a {
     margin: 20px;
   }
@@ -181,12 +226,14 @@ section, footer {
 footer {
   white-space: nowrap;
   position: relative;
+
   .col {
     position: relative;
     display: inline-block;
     height: 250px;
     vertical-align: middle;
   }
+
   .one {
     a {
       width: 25%;
@@ -195,6 +242,7 @@ footer {
       top: 30%;
       left: 0;
     }
+
     width: 25%;
   }
 
@@ -207,6 +255,7 @@ footer {
       top: 0;
       left: 0;
     }
+
     width: 50%;
   }
 
@@ -217,28 +266,22 @@ footer {
       position: absolute;
       top: 15%;
     }
+
     width: 25%;
   }
-}
-
-
-.about-content {
-  margin-left: 25%;
-  margin-right: 25%;
-  padding-bottom: 40px;
-  z-index: 200;
-  position: relative;
 }
 
 .social {
   a {
     padding: 5px;
     text-decoration: none !important;
+
     &:hover {
-      color:#bd8e8e;
+      color: #bd8e8e;
     }
   }
 }
+
 .silver {
   a {
     display: inline-block;
@@ -255,7 +298,7 @@ footer {
     }
 
     &:hover {
-        background-color: #bd8e8e;
+      background-color: #bd8e8e;
     }
   }
 
@@ -268,12 +311,12 @@ footer {
     list-style: none;
     padding: 0;
   }
-  
+
   a {
     display: inline-block;
 
     span {
-        font-size: 2em;
+      font-size: 2em;
     }
 
     img, span {
@@ -287,22 +330,10 @@ footer {
     }
   }
 }
-@media screen and (min-height: 800px) {
-  .about-content {
-    margin-top: -50px;
-  }
-}
 
-@media screen and (max-height: 1200px) {
-  .info {
-    div {
-      display: block;
-    }
-    .tickets {
-      display: block !important;
-      margin-top: 50px;
-      width: 100%;
-    }
+@media screen and (max-width: 1150px) {
+  .box {
+    margin-top: 100px;
   }
 }
 
@@ -317,19 +348,10 @@ footer {
       font-size: 1em;
       width: 100%;
       text-align: center;
+
       span {
         text-align: center !important;
       }
-      .day {
-        font-size: 2em;
-      }
-      .date {
-        font-size: 1em;
-      }
-      .pattys {
-        letter-spacing: 8px;
-      }
-
     }
   }
 
@@ -342,9 +364,23 @@ footer {
   footer {
     white-space: normal;
     text-align: center;
+
     .col {
       text-align: center !important;
       width: 100% !important;
     }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .jumbo {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  section, footer {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
