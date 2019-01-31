@@ -1,6 +1,7 @@
 *
 !src/
 !src/*
+!2018/*
 !.gitignore
 !LICENSE
 !README.md
