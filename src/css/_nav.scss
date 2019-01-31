@@ -179,6 +179,9 @@ nav {
 }
 
 @media screen and (max-width: 1070px) {
+  .wbw-sign {
+    display: none;
+  }
   .nav-bar {
     .info {
       display: none;
