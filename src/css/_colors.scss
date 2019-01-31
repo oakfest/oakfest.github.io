@@ -10,6 +10,10 @@ $poster: #4f8c59;
   background-color: $primary;
 }
 
+.primary-lighter {
+  background-color: $primary_lighter;
+}
+
 .btn-primary {
   background-color: $primary;
   &:hover {

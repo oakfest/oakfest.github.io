@@ -51,13 +51,30 @@ section, footer {
   text-align: left;
 }
 
+@keyframes shake {
+  10%, 90% {
+    transform: rotate(-1deg);
+  }
+
+  20%, 80% {
+    transform: rotate(1deg);
+  }
+
+  30%, 50%, 70% {
+    transform: rotate(-2deg);
+  }
+
+  40%, 60% {
+    transform: rotate(2deg);
+  }
+}
+
 #corner-box {
-  background-color: $primary_lighter;
   height: 230px;
   width: 280px;
   display: block;
   position: absolute;
-  z-index: 1000;
+  z-index: 2000;
   top: 0;
   padding: 20px;
 
@@ -95,6 +112,25 @@ section, footer {
     margin: 0 auto;
     height: 500px;
     padding-top: 200px;
+
+    .wbw-sign {
+      img {
+        margin-top: 30px;
+        -ms-margin-top: -20px;
+      }
+
+      transform: rotate(3deg);
+      position: absolute;
+      right: 10%;
+      bottom:10%;
+      width: 200px;
+      height: 200px;
+      padding: 20px;
+
+      &:hover {
+        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+      }
+    }
 
     .box {
       font-style: italic;
@@ -134,22 +170,6 @@ section, footer {
       line-height: 40px;
       letter-spacing: 3px;
     }
-
-    .info {
-      font-family: 'Ostrich Sans', sans-serif;
-      font-size: 1em;
-      letter-spacing: 3px;
-      text-align: center;
-      text-transform: uppercase;
-
-      div {
-        display: inline-block;
-      }
-
-      .tickets {
-        display: none;
-      }
-    }
   }
 }
 
@@ -157,6 +177,23 @@ section, footer {
   background-color: $secondary;
   margin-top: -70px;
   z-index: 100;
+
+  .left-signs {
+    text-shadow: 1px 1px 1px #969696;
+    position: absolute;
+    top: 25px;
+    left: -15px;
+    height: inherit;
+    width: 25%;
+  }
+
+  .right-signs {
+    position: absolute;
+    right: -15px;
+    top: 25px;
+    height: inherit;
+    width: 25%;
+  }
 
   .about-content {
     margin-left: 25%;
@@ -388,5 +425,23 @@ footer {
   section, footer {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+.sponsors {
+  ul {
+    list-style: none;
+    padding-top: 200px;
+    li {
+      display: inline-block;
+      margin:50px;
+      a {
+        width:300px;
+        height:250px;
+        background-color: $primary_lighter;
+        padding: 20px;
+      }
+
+    }
   }
 }
