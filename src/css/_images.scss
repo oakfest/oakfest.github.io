@@ -3,42 +3,53 @@
   background-size: contain;
 }
 
+.plain-logo {
+  background: url('../images/logo.svg') no-repeat center;
+  background-size: contain;
+}
+
+.sign {
+    background: url('../images/yellow-sign.svg') no-repeat center;
+    background-size: contain;
+    -ms-background-position-y: 50px;
+}
+
 .bg {
-  background: url('../images/banner_bg.jpg') no-repeat center;
-  background-size:cover;
+  background: url('../images/people.svg') no-repeat;
+  background-size: cover;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.vega {
+.lady {
   position: absolute;
   height: 100%;
   width: 100%;
 
-  background: url('../images/vega-back.jpg') no-repeat center;
+  background: url('../images/bands/lady.jpg') no-repeat center;
   background-position-y: 25%;
   background-size: cover;
 
   .shim {
-    background-color: $primary;
+    background-color: #017679;
     opacity: 0.5;
     height: 100%;
     width: 100%;
   }
 }
 
-.future {
+.hiss {
   position: absolute;
   height: 100%;
   width: 100%;
 
-  background: url('../images/future-back2.jpg') no-repeat center;
+  background: url('../images/bands/hiss.jpg') no-repeat center;
   background-size: cover;
 
   .shim {
-    background-color: $primary;
+    background-color: #017679;
     opacity: 0.5;
     height: 100%;
     width: 100%;
@@ -46,15 +57,14 @@
 }
 
 
-.vega-logo {
-  background: url('../images/vega.png') no-repeat center;
+.lady-logo {
+  background: url('../images/bands/lady-text-logo.png') no-repeat center;
   background-size: contain;
   width: 300px;
 }
 
-.future-logo {
-  background: url('../images/future.png') no-repeat center;
+.hiss-logo {
+  background: url('../images/bands/hiss-text-logo.png') no-repeat center;
   background-size: contain;
-  width: 400px;
-
+  width: 300px;
 }

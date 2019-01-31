@@ -1,0 +1,8 @@
+{
+  "short_name": "Oakfest",
+  "name": "oakfest.net",
+  "start_url": "/",
+  "background_color": "#224e55",
+  "theme_color": "#cf5240",
+  "display": "standalone"
+}

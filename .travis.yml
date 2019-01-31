@@ -20,6 +20,7 @@ before_deploy:
   - rm src -r
   - rm node_modules -r
   - rm package.json
+  - rm yarn.lock
   - rm webpack.config.js
 
 deploy:

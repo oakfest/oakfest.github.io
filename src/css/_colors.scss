@@ -1,13 +1,17 @@
 $text: #fff;
-$primary: #224e55;
-$primary_lighter: #316468;
-$secondary: #cf5240;
-$compliment: #ebc863;
+$primary: #0bb69b;
+$primary_lighter: #fcae17;
+$secondary: #f03f37;
+$compliment: #0bb69b;
 $none: #fff;
 $poster: #4f8c59;
 
 .primary {
   background-color: $primary;
+}
+
+.primary-lighter {
+  background-color: $primary_lighter;
 }
 
 .btn-primary {

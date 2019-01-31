@@ -10,7 +10,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const dist = path.resolve(__dirname, 'assets/dist');
 
 const pages = [
-    'sponsors'
+    //'sponsors'
 ];
 
 module.exports = function (env) {
@@ -50,7 +50,7 @@ module.exports = function (env) {
                     loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
                 },
                 {
-                    test: /\.(png|jpg|gif)$/,
+                    test: /\.(png|jpg|gif|svg|woff|woff2)$/,
                     use: [
                         {
                             loader: 'file-loader',
