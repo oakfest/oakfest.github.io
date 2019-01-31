@@ -2,7 +2,7 @@
   "short_name": "Oakfest",
   "name": "oakfest.net",
   "start_url": "/",
-  "background_color": "#0bb69b",
-  "theme_color": "#fcae17",
+  "background_color": "#224e55",
+  "theme_color": "#cf5240",
   "display": "standalone"
 }

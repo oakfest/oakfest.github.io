@@ -139,11 +139,11 @@ nav {
       padding-right: 5px; } }
 
 .logo {
-  background: url(/assets/dist/034d3f249545a0e7a796d4ae966e1710.png) no-repeat center;
+  background: url(/2018/assets/dist/034d3f249545a0e7a796d4ae966e1710.png) no-repeat center;
   background-size: contain; }
 
 .bg {
-  background: url(/assets/dist/b67a05d60090f11fa7d401d531078620.jpg) no-repeat center;
+  background: url(/2018/assets/dist/b67a05d60090f11fa7d401d531078620.jpg) no-repeat center;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -154,7 +154,7 @@ nav {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: url(/assets/dist/80b309f9d5d7a55980cbf879b135d590.jpg) no-repeat center;
+  background: url(/2018/assets/dist/80b309f9d5d7a55980cbf879b135d590.jpg) no-repeat center;
   background-position-y: 25%;
   background-size: cover; }
   .vega .shim {
@@ -167,7 +167,7 @@ nav {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: url(/assets/dist/51190dd2d1205729421dcab027fed188.jpg) no-repeat center;
+  background: url(/2018/assets/dist/51190dd2d1205729421dcab027fed188.jpg) no-repeat center;
   background-size: cover; }
   .future .shim {
     background-color: #224e55;
@@ -176,12 +176,12 @@ nav {
     width: 100%; }
 
 .vega-logo {
-  background: url(/assets/dist/3fc96c995088f51dee1ceb94f497b331.png) no-repeat center;
+  background: url(/2018/assets/dist/3fc96c995088f51dee1ceb94f497b331.png) no-repeat center;
   background-size: contain;
   width: 300px; }
 
 .future-logo {
-  background: url(/assets/dist/b9ce8d6f48e040c4d15dc42bd16f56cd.png) no-repeat center;
+  background: url(/2018/assets/dist/b9ce8d6f48e040c4d15dc42bd16f56cd.png) no-repeat center;
   background-size: contain;
   width: 400px; }
 
