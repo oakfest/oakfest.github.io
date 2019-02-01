@@ -123,7 +123,7 @@ section, footer {
       transform: rotate(3deg);
       position: absolute;
       right: 10%;
-      bottom:10%;
+      bottom: 10%;
       width: 200px;
       height: 200px;
       padding: 20px;
@@ -433,15 +433,26 @@ footer {
   ul {
     list-style: none;
     padding-top: 200px;
+
     li {
       display: inline-block;
-      margin:50px;
+      margin: 50px;
+
       a {
-        width:300px;
-        height:250px;
+        width: 300px;
+        height: 250px;
         background-color: $primary_lighter;
         padding: 20px;
       }
+    }
+  }
+}
+
+.nimble-logo {
+  &:hover {
+    img {
+      transform: rotate(10deg);
+      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     }
   }
 }
