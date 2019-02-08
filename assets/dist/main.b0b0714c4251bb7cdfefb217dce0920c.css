@@ -449,11 +449,13 @@ footer {
       position: absolute;
       top: 15%; }
 
-.social a {
-  padding: 5px;
-  text-decoration: none !important; }
-  .social a:hover {
-    color: #bd8e8e; }
+.social {
+  white-space: normal; }
+  .social a {
+    padding: 5px;
+    text-decoration: none !important; }
+    .social a:hover {
+      color: #bd8e8e; }
 
 .silver a {
   display: inline-block; }
