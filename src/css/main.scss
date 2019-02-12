@@ -226,10 +226,6 @@ section, footer {
     .shim {
       opacity: 0;
     }
-
-    .logo {
-      width: 600px !important;
-    }
   }
 
   .logo {
@@ -454,6 +450,14 @@ footer {
   section, footer {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .band {
+    &:hover {
+      .logo {
+        width: 600px !important;
+      }
+    }
   }
 }
 
