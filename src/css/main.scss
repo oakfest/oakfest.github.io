@@ -30,6 +30,10 @@ a {
   color: #fff;
 }
 
+.no-wrap{
+  white-space: nowrap;
+}
+
 section, footer {
   position: relative;
   display: block;
@@ -206,7 +210,13 @@ section, footer {
   }
 }
 
+.half {
+  width: 50%;
+  display: inline-block;
+}
+
 .band {
+  position: relative;
   height: 400px;
   padding: 0 !important;
   text-align: center;
@@ -317,6 +327,7 @@ footer {
 
 .social {
   white-space: normal;
+
   a {
     padding: 5px;
     text-decoration: none !important;
@@ -414,6 +425,22 @@ footer {
       text-align: center !important;
       width: 100% !important;
     }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hiss {
+    background-position-y: -250px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .half {
+    width: 100% !important;
+  }
+
+  section, footer {
+    white-space: normal !important;
   }
 }
 

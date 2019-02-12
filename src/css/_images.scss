@@ -1,3 +1,4 @@
+
 .logo {
   background: url('../images/logo.png') no-repeat center;
   background-size: contain;
@@ -9,9 +10,9 @@
 }
 
 .sign {
-    background: url('../images/yellow-sign.svg') no-repeat center;
-    background-size: contain;
-    -ms-background-position-y: 50px;
+  background: url('../images/yellow-sign.svg') no-repeat center;
+  background-size: contain;
+  -ms-background-position-y: 50px;
 }
 
 .bg {
@@ -57,6 +58,40 @@
 }
 
 
+.billy {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background: url('../images/bands/rigsby.jpg') no-repeat center;
+  background-position-y: 25%;
+  background-size: cover;
+
+  .shim {
+    background-color: #017679;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.country {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background: url('../images/bands/country-westerns.jpg') no-repeat center;
+  background-position-y: 25%;
+  background-size: cover;
+
+  .shim {
+    background-color: #017679;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .lady-logo {
   background: url('../images/bands/lady-text-logo.png') no-repeat center;
   background-size: contain;
@@ -68,3 +103,16 @@
   background-size: contain;
   width: 300px;
 }
+
+.country-logo {
+  background: url('../images/bands/country-westerns-logo.png') no-repeat center;
+  background-size: contain;
+  width: 300px;
+}
+
+.billy-logo {
+  background: url('../images/bands/billy-logo.png') no-repeat center;
+  background-size: contain;
+  width: 300px;
+}
+
