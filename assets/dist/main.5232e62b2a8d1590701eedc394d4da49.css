@@ -206,6 +206,32 @@ nav {
     height: 100%;
     width: 100%; }
 
+.billy {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(/assets/dist/fb00ee5a25b82064ce8c9addf3836a7a.jpg) no-repeat center;
+  background-position-y: 25%;
+  background-size: cover; }
+  .billy .shim {
+    background-color: #017679;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%; }
+
+.country {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(/assets/dist/c6c92cee2c0bdf9df5fc06deba85f54c.jpg) no-repeat center;
+  background-position-y: 25%;
+  background-size: cover; }
+  .country .shim {
+    background-color: #017679;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%; }
+
 .lady-logo {
   background: url(/assets/dist/d17e830bb0c52ced8daaa0c3295f4871.png) no-repeat center;
   background-size: contain;
@@ -213,6 +239,16 @@ nav {
 
 .hiss-logo {
   background: url(/assets/dist/4badc09fb70986c0cc7542c250dbeff1.png) no-repeat center;
+  background-size: contain;
+  width: 300px; }
+
+.country-logo {
+  background: url(/assets/dist/8d277bd2cad961ae3cc01e9aa8bc3688.png) no-repeat center;
+  background-size: contain;
+  width: 300px; }
+
+.billy-logo {
+  background: url(/assets/dist/ad164c1823e98e96f36db8dfbd8fdb5c.png) no-repeat center;
   background-size: contain;
   width: 300px; }
 
@@ -247,6 +283,9 @@ a {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: #fff; }
+
+.no-wrap {
+  white-space: nowrap; }
 
 section, footer {
   position: relative;
@@ -374,7 +413,12 @@ section, footer {
     z-index: 200;
     position: relative; }
 
+.half {
+  width: 50%;
+  display: inline-block; }
+
 .band {
+  position: relative;
   height: 400px;
   padding: 0 !important;
   text-align: center;
@@ -510,6 +554,16 @@ footer {
     footer .col {
       text-align: center !important;
       width: 100% !important; } }
+
+@media screen and (min-width: 1000px) {
+  .hiss {
+    background-position-y: -250px !important; } }
+
+@media screen and (max-width: 1000px) {
+  .half {
+    width: 100% !important; }
+  section, footer {
+    white-space: normal !important; } }
 
 @media screen and (min-width: 800px) {
   .jumbo {
