@@ -425,8 +425,6 @@ section, footer {
   vertical-align: middle; }
   .band:hover .shim {
     opacity: 0; }
-  .band:hover .logo {
-    width: 600px !important; }
   .band .logo {
     position: absolute;
     text-align: center;
@@ -572,7 +570,9 @@ footer {
     margin-top: 20px; }
   section, footer {
     margin-left: 20px;
-    margin-right: 20px; } }
+    margin-right: 20px; }
+  .band:hover .logo {
+    width: 600px !important; } }
 
 .sponsors ul {
   list-style: none;
