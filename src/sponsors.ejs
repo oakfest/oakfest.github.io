@@ -92,22 +92,20 @@
     </div>
     <ul>
         <% for(let i in htmlWebpackPlugin.options.sponsors){ %>
-            <li style="<%= '-ms-grid-row: ' + (Math.floor(i / 3) + 1) + '; -ms-grid-column: ' + ((i % 3) + 1) + ';' %>">
+            <li style="<%= '-ms-grid-row: ' + (Math.floor(i / 4) + 1) + '; -ms-grid-column: ' + ((i % 4) + 1) + ';' %>">
                 <a href="<%= htmlWebpackPlugin.options.sponsors[i].url %>"
                    class="<%= htmlWebpackPlugin.options.sponsors[i].level %>"
-                   title="<%= htmlWebpackPlugin.options.sponsors[i].name %>">
+                   title="<%= htmlWebpackPlugin.options.sponsors[i].name.replace("\n", ' - ') %> (<%= htmlWebpackPlugin.options.sponsors[i].level %> sponsor)">
                     <div class="img">
                         <% if (htmlWebpackPlugin.options.sponsors[i].logo) { %>
-                            <img src="<%= require(htmlWebpackPlugin.options.sponsors[i].logo) %>" alt="<%= htmlWebpackPlugin.options.sponsors[i].name %>">
+                            <img src="<%= require(`./images/sponsors/${htmlWebpackPlugin.options.sponsors[i].logo}`) %>"
+                                 alt="<%= htmlWebpackPlugin.options.sponsors[i].name.replace("\n", ' - ') %>"
+                                 class="<%= htmlWebpackPlugin.options.sponsors[i].tiny ? 'tiny' : '' %>">
                         <% } else { %>
-                            <div class="text">
-                                <%= htmlWebpackPlugin.options.sponsors[i].name %>
-                            </div>
+                            <div class="text"><%= htmlWebpackPlugin.options.sponsors[i].name %></div>
                         <% } %>
                     </div>
-                    <div class="undercard">
-                        <%= htmlWebpackPlugin.options.sponsors[i].name %>
-                    </div>
+                    <div class="undercard"><%= htmlWebpackPlugin.options.sponsors[i].name %></div>
                 </a>
             </li>
         <% } %>

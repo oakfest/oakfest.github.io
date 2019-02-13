@@ -8,15 +8,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const dist = path.resolve(__dirname, 'assets/dist');
+const sponsors = require('./sponsor-list');
 
 const pages = [
     'sponsors'
 ];
 
-const sponsors = require('./sponsor-list');
-
 module.exports = function (env) {
-    return {
+    const config = {
         entry: {
             'oak.min': './src/js/index.js',
             'main': './src/css/main.scss'
@@ -29,7 +28,6 @@ module.exports = function (env) {
         },
 
         module: {
-
             rules: [
                 {
                     test: /\.js$/,
@@ -63,6 +61,10 @@ module.exports = function (env) {
             ]
         },
 
+        resolve: {
+            alias: {}
+        },
+
         plugins: [
             new CleanWebpackPlugin(['assets/dist'].concat(pages), {
                 root: __dirname + '/'
@@ -90,5 +92,7 @@ module.exports = function (env) {
                 sponsors: sponsors
             })
         }))
-    }
+    };
+
+    return config;
 };

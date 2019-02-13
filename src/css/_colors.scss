@@ -65,14 +65,18 @@ $poster: #4f8c59;
 }
 
 .gold {
-  background-color: #eccf00 !important;
+  background-color: gold !important;
+  .img {
+    color: #002926;
+    text-shadow: 1px 1px 1px #ffffff;
+  }
   &:hover {
-    background-color: #807001 !important;
+    background-color: #5d5101 !important;
   }
 }
 
 .silver {
-  background-color: #a2a2a2 !important;
+  background-color: #cbcfd2 !important;
   &:hover {
     background-color: #636363 !important;
   }
@@ -81,6 +85,6 @@ $poster: #4f8c59;
 .bronze {
   background-color: $primary_lighter;
   &:hover {
-    background-color: #886117;
+    background-color: #523d13;;
   }
 }

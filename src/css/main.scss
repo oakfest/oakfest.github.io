@@ -343,11 +343,13 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .collapsed {
     background-color: $compliment;
     top: 0;
     display: block;
   }
+
   h1 {
     text-shadow: 1px 1px 1px #313131;
     display: block;
@@ -367,7 +369,7 @@ footer {
     z-index: 200;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
 
@@ -390,8 +392,21 @@ footer {
           height: 100%;
           text-align: center;
           position: relative;
+
           img {
-            width: 90%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            max-width: 90%;
+            max-height: 100%;
+            overflow: auto;
+          }
+
+          .tiny {
+            width: 50% !important;
           }
         }
 
@@ -400,6 +415,7 @@ footer {
         }
 
         .undercard, .img .text {
+          white-space: pre-wrap;
           width: 100%;
           text-align: center;
           margin: 0;
@@ -413,6 +429,7 @@ footer {
           .img {
             display: none;
           }
+
           .undercard {
             display: block;
           }
@@ -426,14 +443,18 @@ footer {
   color: #000;
   text-align: right;
   padding: 2px;
+
   span {
     padding: 2px;
   }
+
   a {
     color: #000 !important;
+
     &:hover, &:focus {
       color: $secondary !important;
     }
+
     &:active {
       color: $primary !important;
     }
@@ -474,6 +495,7 @@ footer {
     #nav {
       display: none;
     }
+
     .collapsed {
       display: block !important;
     }
@@ -481,6 +503,7 @@ footer {
   .sponsors {
     ul {
       display: block;
+
       li {
         display: inline-block;
         width: 80%;
