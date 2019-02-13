@@ -144,9 +144,9 @@ nav {
   }
 }
 
-.internal nav{
-    bottom: unset;
-    top: 20px;
+.internal nav {
+  bottom: unset;
+  top: 20px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -194,9 +194,12 @@ nav {
   .hide-xs {
     display: none !important;
   }
+  .buttons {
+    margin: 40px 5px 40px 40px !important;
+  }
   .collapsed {
     .buttons {
-      margin: 30px;
+      margin: 30px !important;
       display: block;
     }
   }
