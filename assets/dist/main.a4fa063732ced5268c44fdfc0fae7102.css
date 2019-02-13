@@ -40,19 +40,22 @@
     background-color: #4e4154 !important; }
 
 .gold {
-  background-color: #eccf00 !important; }
+  background-color: gold !important; }
+  .gold .img {
+    color: #002926;
+    text-shadow: 1px 1px 1px #ffffff; }
   .gold:hover {
-    background-color: #807001 !important; }
+    background-color: #5d5101 !important; }
 
 .silver {
-  background-color: #a2a2a2 !important; }
+  background-color: #cbcfd2 !important; }
   .silver:hover {
     background-color: #636363 !important; }
 
 .bronze {
   background-color: #fcae17; }
   .bronze:hover {
-    background-color: #886117; }
+    background-color: #523d13; }
 
 nav {
   position: absolute;
@@ -561,7 +564,7 @@ footer {
   z-index: 200;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   text-align: center; }
   .sponsors ul li {
@@ -582,10 +585,21 @@ footer {
         text-align: center;
         position: relative; }
         .sponsors ul li a .img img {
-          width: 90%; }
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          max-width: 90%;
+          max-height: 100%;
+          overflow: auto; }
+        .sponsors ul li a .img .tiny {
+          width: 50% !important; }
       .sponsors ul li a .undercard {
         display: none; }
       .sponsors ul li a .undercard, .sponsors ul li a .img .text {
+        white-space: pre-wrap;
         width: 100%;
         text-align: center;
         margin: 0;
