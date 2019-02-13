@@ -196,11 +196,14 @@ nav {
   }
   .buttons {
     margin: 40px 5px 40px 40px !important;
+    display: block;
+    a {
+      padding: 10px !important;
+    }
   }
   .collapsed {
     .buttons {
-      margin: 30px !important;
-      display: block;
+      margin: 40px !important;
     }
   }
 }
