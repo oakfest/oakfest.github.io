@@ -29,6 +29,31 @@
 .poster {
   background-color: #4f8c59; }
 
+.presenting {
+  background-color: #47ffc1 !important; }
+  .presenting:hover {
+    background-color: #325247 !important; }
+
+.platinum {
+  background-color: #ad88bf !important; }
+  .platinum:hover {
+    background-color: #4e4154 !important; }
+
+.gold {
+  background-color: #eccf00 !important; }
+  .gold:hover {
+    background-color: #807001 !important; }
+
+.silver {
+  background-color: #a2a2a2 !important; }
+  .silver:hover {
+    background-color: #636363 !important; }
+
+.bronze {
+  background-color: #fcae17; }
+  .bronze:hover {
+    background-color: #886117; }
+
 nav {
   position: absolute;
   display: block;
@@ -36,7 +61,8 @@ nav {
   vertical-align: middle;
   white-space: nowrap;
   z-index: 1000;
-  bottom: 20px; }
+  bottom: 20px;
+  max-height: 200px; }
   nav .nav-bar {
     margin-top: 20px;
     height: 100px;
@@ -338,13 +364,15 @@ section, footer {
   .jumbo #spotlights {
     z-index: 50; }
   .jumbo .yelling {
-    position: relative;
+    position: absolute;
     z-index: 100;
     width: 100%;
+    height: 500px;
     text-align: center;
     margin: 0 auto;
-    height: 500px;
-    padding-top: 200px; }
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
     .jumbo .yelling .wbw-sign {
       transform: rotate(3deg);
       position: absolute;
@@ -499,41 +527,105 @@ footer {
     .social a:hover {
       color: #bd8e8e; }
 
-.silver a {
-  display: inline-block; }
-  .silver a span {
-    font-size: 3em; }
-  .silver a img, .silver a span {
-    margin: auto;
-    max-width: 400px;
-    max-height: 200px;
-    padding: 10px; }
-  .silver a:hover {
-    background-color: #bd8e8e; }
+.internal .jumbo {
+  height: auto;
+  max-height: none;
+  padding-top: 200px; }
 
-.bronze {
-  padding: 20px; }
-  .bronze ul {
-    list-style: none;
-    padding: 0; }
-  .bronze a {
-    display: inline-block; }
-    .bronze a span {
-      font-size: 2em; }
-    .bronze a img, .bronze a span {
-      max-width: 200px;
-      max-height: 120px;
-      padding: 10px; }
-    .bronze a:hover {
-      background-color: #316468; }
+.internal .collapsed {
+  background-color: #0bb69b;
+  top: 0;
+  display: block; }
+
+.internal h1 {
+  text-shadow: 1px 1px 1px #313131;
+  display: block;
+  position: relative;
+  z-index: 200;
+  text-align: center;
+  font-family: Roboto, sans-serif; }
+
+.sponsors ul {
+  position: relative;
+  list-style: none;
+  z-index: 200;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center; }
+  .sponsors ul li {
+    display: inline-block;
+    margin: 5px;
+    height: 250px;
+    border: 2px solid #fff; }
+    .sponsors ul li a {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-shadow: 1px 1px 1px #313131; }
+      .sponsors ul li a .img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: relative; }
+        .sponsors ul li a .img img {
+          width: 90%; }
+      .sponsors ul li a .undercard {
+        display: none; }
+      .sponsors ul li a .undercard, .sponsors ul li a .img .text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      .sponsors ul li a:hover .img {
+        display: none; }
+      .sponsors ul li a:hover .undercard {
+        display: block; }
+
+.post-footer {
+  color: #000;
+  text-align: right;
+  padding: 2px; }
+  .post-footer span {
+    padding: 2px; }
+  .post-footer a {
+    color: #000 !important; }
+    .post-footer a:hover, .post-footer a:focus {
+      color: #f03f37 !important; }
+    .post-footer a:active {
+      color: #0bb69b !important; }
+
+.nimble-logo:hover img {
+  transform: rotate(10deg);
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; }
 
 @media screen and (max-width: 1150px) {
   .box {
-    margin-top: 100px; } }
+    margin-top: 100px; }
+  .sponsors ul {
+    grid-template-columns: 1fr 1fr 1fr; } }
 
 @media screen and (max-width: 800px) {
   h1 {
     text-align: center !important; }
+  #corner-box {
+    width: 175px;
+    height: 143px; }
+  .internal #nav {
+    display: none; }
+  .internal .collapsed {
+    display: block !important; }
+  .sponsors ul {
+    display: block; }
+    .sponsors ul li {
+      display: inline-block;
+      width: 80%; }
   .jumbo {
     padding-top: 20px; }
     .jumbo .yelling {
@@ -560,7 +652,7 @@ footer {
 @media screen and (max-width: 1000px) {
   .half {
     width: 100% !important; }
-  section, footer {
+  .no-wrap {
     white-space: normal !important; } }
 
 @media screen and (min-width: 800px) {
@@ -573,19 +665,3 @@ footer {
     margin-right: 20px; }
   .band:hover .logo {
     width: 600px !important; } }
-
-.sponsors ul {
-  list-style: none;
-  padding-top: 200px; }
-  .sponsors ul li {
-    display: inline-block;
-    margin: 50px; }
-    .sponsors ul li a {
-      width: 300px;
-      height: 250px;
-      background-color: #fcae17;
-      padding: 20px; }
-
-.nimble-logo:hover img {
-  transform: rotate(10deg);
-  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; }
