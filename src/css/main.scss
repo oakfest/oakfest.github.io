@@ -452,6 +452,9 @@ footer {
     #nav {
       display: none;
     }
+    .collapsed {
+      display: block !important;
+    }
   }
   .sponsors {
     ul {
