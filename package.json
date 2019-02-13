@@ -6,6 +6,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.38",
     "@babel/preset-env": "^7.0.0-beta.38",
+    "autoprefixer": "^9.4.7",
     "babel-loader": "^8.0.0-beta.0",
     "babel-minify-webpack-plugin": "^0.2.0",
     "clean-webpack-plugin": "^0.1.17",

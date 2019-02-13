@@ -10,8 +10,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const dist = path.resolve(__dirname, 'assets/dist');
 
 const pages = [
-    //'sponsors'
+    'sponsors'
 ];
+
+const sponsors = require('./sponsor-list');
 
 module.exports = function (env) {
     return {
@@ -84,7 +86,8 @@ module.exports = function (env) {
             // generate static page folders for fancy urls
             return new HtmlWebpackPlugin({
                 filename: __dirname + '/' + page + '/index.html',
-                template: __dirname + '/src/' + page + '.ejs'
+                template: __dirname + '/src/' + page + '.ejs',
+                sponsors: sponsors
             })
         }))
     }

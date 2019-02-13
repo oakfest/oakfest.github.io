@@ -72,22 +72,45 @@
         </div>
 
         <ul class="buttons">
+            <li><a href="/" class="tag" rel="home">Home</a></li>
             <li>
                 <a href="https://www.eventbrite.com/e/oakfest-2019-hiss-golden-messengerneighbor-lady-tickets-55535960553"
                    class="tag"
                    rel="tickets"
                    title="Find Tickets">Tickets</a>
             </li>
-            <li><a href="#about" class="tag" rel="about">About</a></li>
-            <li><a href="#bands" class="tag" rel="bands">The Bands</a></li>
+            <li><a href="/#about" class="tag" rel="about">About</a></li>
+            <li><a href="/#bands" class="tag" rel="bands">The Bands</a></li>
             <li><a href="/sponsors" class="active tag" rel="sponsors">Sponsors</a></li>
         </ul>
     </div>
 </nav>
 <section class="primary-lighter jumbo sponsors">
     <div class="bg"></div>
+    <div class="thanks">
+        <h1>Thank you! 💗</h1>
+    </div>
     <ul>
-        <li><a href="#">WBW</a></li>
+        <% for(let i in htmlWebpackPlugin.options.sponsors){ %>
+            <li style="<%= '-ms-grid-row: ' + (Math.floor(i / 3) + 1) + '; -ms-grid-column: ' + ((i % 3) + 1) + ';' %>">
+                <a href="<%= htmlWebpackPlugin.options.sponsors[i].url %>"
+                   class="<%= htmlWebpackPlugin.options.sponsors[i].level %>"
+                   title="<%= htmlWebpackPlugin.options.sponsors[i].name %>">
+                    <div class="img">
+                        <% if (htmlWebpackPlugin.options.sponsors[i].logo) { %>
+                            <img src="<%= require(htmlWebpackPlugin.options.sponsors[i].logo) %>" alt="<%= htmlWebpackPlugin.options.sponsors[i].name %>">
+                        <% } else { %>
+                            <div class="text">
+                                <%= htmlWebpackPlugin.options.sponsors[i].name %>
+                            </div>
+                        <% } %>
+                    </div>
+                    <div class="undercard">
+                        <%= htmlWebpackPlugin.options.sponsors[i].name %>
+                    </div>
+                </a>
+            </li>
+        <% } %>
     </ul>
 </section>
 
@@ -118,7 +141,8 @@
                 <a href="https://github.com/oakfest" class="tag" rel="github" title="Fork us on GitHub">
                     <span class="fab fa-github fa-3x"></span>
                 </a>
-                <a href="https://nimblecms.com" class="tag nimble-logo" rel="nimble" title="Design by Jessie & John @ NimbleCMS">
+                <a href="https://nimblecms.com" class="tag nimble-logo" rel="nimble"
+                   title="Design by Jessie & John @ NimbleCMS">
                     <img src="<%= require('./images/nimble-logo.png') %>" style="height: 40px;" alt="NimbleCMS">
                 </a>
                 <a href="https://open.spotify.com/user/g5joenmbzfrwkg4gg0760qfhm?si=oVgZibovS72ar6wNm9UPDQ" class="tag"

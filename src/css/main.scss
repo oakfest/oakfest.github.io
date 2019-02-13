@@ -30,7 +30,7 @@ a {
   color: #fff;
 }
 
-.no-wrap{
+.no-wrap {
   white-space: nowrap;
 }
 
@@ -110,13 +110,15 @@ section, footer {
   }
 
   .yelling {
-    position: relative;
+    position: absolute;
     z-index: 100;
     width: 100%;
+    height: 500px;
     text-align: center;
     margin: 0 auto;
-    height: 500px;
-    padding-top: 200px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 
     .wbw-sign {
       img {
@@ -254,7 +256,6 @@ section, footer {
 
 }
 
-
 .call-to-action {
   text-align: center;
 
@@ -334,51 +335,94 @@ footer {
   }
 }
 
-.silver {
-  a {
-    display: inline-block;
-
-    span {
-      font-size: 3em;
-    }
-
-    img, span {
-      margin: auto;
-      max-width: 400px;
-      max-height: 200px;
-      padding: 10px;
-    }
-
-    &:hover {
-      background-color: #bd8e8e;
-    }
+.internal {
+  .jumbo {
+    height: auto;
+    max-height: none;
+    padding-top: 200px;
   }
-
+  .collapsed {
+    background-color: $compliment;
+    top: 0;
+    display: block;
+  }
+  h1 {
+    text-shadow: 1px 1px 1px #313131;
+    display: block;
+    position: relative;
+    z-index: 200;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+  }
 }
 
-.bronze {
-  padding: 20px;
-
+.sponsors {
   ul {
+    position: relative;
     list-style: none;
-    padding: 0;
+    z-index: 200;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 5px;
+      height: 250px;
+      border: 2px solid #fff;
+
+      a {
+        position:relative;
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-shadow: 1px 1px 1px #313131;
+
+        .img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          position: relative;
+          img {
+            width: 90%;
+          }
+        }
+
+        .undercard {
+          display: none;
+        }
+
+        .undercard, .img .text {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+        &:hover {
+          .img {
+            display: none;
+          }
+          .undercard {
+            display: block;
+          }
+        }
+      }
+    }
   }
+}
 
-  a {
-    display: inline-block;
-
-    span {
-      font-size: 2em;
-    }
-
-    img, span {
-      max-width: 200px;
-      max-height: 120px;
-      padding: 10px;
-    }
-
-    &:hover {
-      background-color: #316468;
+.nimble-logo {
+  &:hover {
+    img {
+      transform: rotate(10deg);
+      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     }
   }
 }
@@ -387,12 +431,38 @@ footer {
   .box {
     margin-top: 100px;
   }
+  .sponsors {
+    ul {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
 }
 
 @media screen and (max-width: 800px) {
   h1 {
     text-align: center !important;
   }
+
+  #corner-box {
+    width: 175px;
+    height: 143px;
+  }
+
+  .internal {
+    #nav {
+      display: none;
+    }
+  }
+  .sponsors {
+    ul {
+      display: block;
+      li {
+        display:inline-block;
+        width: 80%;
+      }
+    }
+  }
+
   .jumbo {
     padding-top: 20px;
 
@@ -435,7 +505,7 @@ footer {
     width: 100% !important;
   }
 
-  section, footer {
+  .no-wrap {
     white-space: normal !important;
   }
 }
@@ -461,30 +531,3 @@ footer {
   }
 }
 
-.sponsors {
-  ul {
-    list-style: none;
-    padding-top: 200px;
-
-    li {
-      display: inline-block;
-      margin: 50px;
-
-      a {
-        width: 300px;
-        height: 250px;
-        background-color: $primary_lighter;
-        padding: 20px;
-      }
-    }
-  }
-}
-
-.nimble-logo {
-  &:hover {
-    img {
-      transform: rotate(10deg);
-      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-    }
-  }
-}
