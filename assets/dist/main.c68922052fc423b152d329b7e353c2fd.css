@@ -173,10 +173,12 @@ nav {
   .hide-xs {
     display: none !important; }
   .buttons {
-    margin: 40px 5px 40px 40px !important; }
+    margin: 40px 5px 40px 40px !important;
+    display: block; }
+    .buttons a {
+      padding: 10px !important; }
   .collapsed .buttons {
-    margin: 30px !important;
-    display: block; } }
+    margin: 40px !important; } }
 
 @media screen and (max-width: 650px) {
   .collapsed .left-logo .oak-fest {
