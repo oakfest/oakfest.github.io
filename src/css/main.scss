@@ -340,6 +340,8 @@ footer {
     height: auto;
     max-height: none;
     padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .collapsed {
     background-color: $compliment;
@@ -359,6 +361,8 @@ footer {
 .sponsors {
   ul {
     position: relative;
+    padding: 0;
+    margin: 0;
     list-style: none;
     z-index: 200;
     display: -ms-grid;
