@@ -191,6 +191,10 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
+  .internal .collapsed .active {
+    display: none;
+  }
+
   .hide-xs {
     display: none !important;
   }
