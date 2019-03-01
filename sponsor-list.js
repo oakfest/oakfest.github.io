@@ -176,5 +176,11 @@ module.exports = [
         name: "The Avenues\nReal Estate Partners",
         url: "http://theavenuesrealestate.com/",
         logo: "avenues.png"
+    },
+    {
+        level: "bronze",
+        name: "Potty Man\nPortable Toilet Rentals",
+        url: "https://pottyman.net/",
+        logo: "pottyman.png"
     }
 ];
