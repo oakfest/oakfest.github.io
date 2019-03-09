@@ -34,6 +34,7 @@ module.exports = [
         name: "Wendy's",
         url: "https://www.wendys.com/",
         logo: "wendys.png"
+    },
     {
         level: "silver",
         name: "J. Smith Lanier & Co.\nA Marsh & McLennan Agency LLC company",
