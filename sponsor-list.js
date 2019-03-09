@@ -78,6 +78,19 @@ module.exports = [
         logo: "thomasville.png"
     },
     {
+        level: "silver",
+        name: "Long & Company CPA's LLC",
+        url: "https://www.longcocpa.com/",
+        logo: ""
+    },
+    {
+        level: "silver",
+        name: "Allgood Screen Printing & Embroidery",
+        url: "https://www.companycasuals.com/allgood/start.jsp",
+        logo: "allgood.png",
+        tiny: true
+    },
+    {
         level: "bronze",
         name: "Element Style Bar",
         url: "https://www.facebook.com/laurendeeabbey/",
@@ -182,5 +195,53 @@ module.exports = [
         name: "Potty Man\nPortable Toilet Rentals",
         url: "https://pottyman.net/",
         logo: "pottyman.png"
+    },
+    {
+        level: "bronze",
+        name: "TC Federal Bank",
+        url: "https://www.tcfederal.com/",
+        logo: "tcf.png"
+    },
+    {
+        level: "bronze",
+        name: "Thomasville National Bank\nTNB Financial",
+        url: "https://tnbank.com/",
+        logo: "tnbboth.png"
+    },
+    {
+        level: "bronze",
+        name: "Pfizer",
+        url: "https://www.pfizer.com/",
+        logo: "pfizer.png"
+    },
+    {
+        level: "bronze",
+        name: "Allen & Allen\nFuneral Home and Crematory",
+        url: "https://www.allenfh.com/",
+        logo: "aa.webp"
+    },
+    {
+        level: "bronze",
+        name: "Collins Pecan",
+        url: "https://www.collinspecan.com/",
+        logo: "collins.png"
+    },
+    {
+        level: "bronze",
+        name: "Performance Food Group",
+        url: "http://www.pfgc.com/",
+        logo: "pfg.png"
+    },
+    {
+        level: "bronze",
+        name: "Three Toms Tavern",
+        url: "#",
+        logo: ""
+    },
+    {
+        level: "bronze",
+        name: "Joey's Landscape and Lawn Care Services,\nLLC.",
+        url: "http://www.joeyslandscape.com/",
+        logo: "jlls.png"
     }
 ];
