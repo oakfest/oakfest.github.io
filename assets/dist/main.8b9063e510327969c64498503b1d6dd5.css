@@ -30,30 +30,33 @@
   background-color: #4f8c59; }
 
 .presenting {
-  background-color: #47ffc1 !important; }
+  background-color: rgba(71, 255, 193, 0.9) !important; }
   .presenting:hover {
     background-color: #325247 !important; }
 
 .platinum {
-  background-color: #ad88bf !important; }
+  background-color: rgba(173, 136, 191, 0.9) !important; }
   .platinum:hover {
     background-color: #4e4154 !important; }
 
 .gold {
-  background-color: gold !important; }
+  background-color: rgba(255, 215, 0, 0.9) !important; }
   .gold .img {
-    color: #002926;
+    color: #000000;
     text-shadow: 1px 1px 1px #ffffff; }
   .gold:hover {
     background-color: #5d5101 !important; }
 
 .silver {
-  background-color: #cbcfd2 !important; }
+  background-color: rgba(203, 207, 210, 0.9) !important;
+  color: #000;
+  text-shadow: none !important; }
   .silver:hover {
+    color: #f3f3f3;
     background-color: #636363 !important; }
 
 .bronze {
-  background-color: #fcae17; }
+  background-color: rgba(252, 174, 22, 0.9); }
   .bronze:hover {
     background-color: #523d13; }
 
