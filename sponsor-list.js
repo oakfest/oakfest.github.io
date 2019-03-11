@@ -210,12 +210,6 @@ module.exports = [
     },
     {
         level: "bronze",
-        name: "Pfizer",
-        url: "https://www.pfizer.com/",
-        logo: "pfizer.png"
-    },
-    {
-        level: "bronze",
         name: "Allen & Allen\nFuneral Home and Crematory",
         url: "https://www.allenfh.com/",
         logo: "aa.webp"
