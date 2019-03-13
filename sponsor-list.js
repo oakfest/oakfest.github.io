@@ -73,12 +73,6 @@ module.exports = [
     },
     {
         level: "silver",
-        name: "City of Thomasville",
-        url: "https://thomasville.org",
-        logo: "thomasville.png"
-    },
-    {
-        level: "silver",
         name: "Long & Company CPA's LLC",
         url: "https://www.longcocpa.com/",
         logo: ""
@@ -89,6 +83,12 @@ module.exports = [
         url: "https://www.companycasuals.com/allgood/start.jsp",
         logo: "allgood.png",
         tiny: true
+    },
+    {
+        level: "silver",
+        name: "Southern Elder Law Center",
+        url: "http://southernelderlaw.com/",
+        logo: "elder.png"
     },
     {
         level: "bronze",
@@ -228,14 +228,32 @@ module.exports = [
     },
     {
         level: "bronze",
+        name: "Joey's Landscape and Lawn Care Services,\nLLC.",
+        url: "http://www.joeyslandscape.com/",
+        logo: "jlls.png"
+    },
+    {
+        level: "bronze",
+        name: "Network Technology Solutions",
+        url: "https://ntsnetworks.com",
+        logo: "nts.svg"
+    },
+    {
+        level: "bronze",
         name: "Three Toms Tavern",
         url: "#",
         logo: ""
     },
     {
         level: "bronze",
-        name: "Joey's Landscape and Lawn Care Services,\nLLC.",
-        url: "http://www.joeyslandscape.com/",
-        logo: "jlls.png"
+        name: "The Orr Family",
+        url: "#",
+        logo: ""
+    },
+    {
+        level: "bronze",
+        name: "Ashlyn Williams",
+        url: "#",
+        logo: ""
     }
 ];
