@@ -11,7 +11,8 @@ const dist = path.resolve(__dirname, 'assets/dist');
 const sponsors = require('./sponsor-list');
 
 const pages = [
-    'sponsors'
+    'sponsors',
+    'faq'
 ];
 
 module.exports = function (env) {
