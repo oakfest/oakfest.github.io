@@ -12,7 +12,7 @@ const sponsors = require('./sponsor-list');
 
 const pages = [
     'sponsors',
-    'faq'
+    'faqs'
 ];
 
 module.exports = function (env) {
