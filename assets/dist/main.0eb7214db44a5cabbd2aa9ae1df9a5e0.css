@@ -559,6 +559,15 @@ footer {
   text-align: center;
   font-family: Roboto, sans-serif; }
 
+.internal-content {
+  position: relative;
+  z-index: 100;
+  margin: 100px 10%;
+  padding-bottom: 10px;
+  padding-top: 1px;
+  background-color: #4e736d;
+  box-shadow: 0px 1px 20px 0px #333; }
+
 .sponsors ul {
   position: relative;
   padding: 0;
@@ -636,11 +645,16 @@ footer {
   .box {
     margin-top: 100px; }
   .sponsors ul {
-    grid-template-columns: 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr; }
+  .call-to-action .btn {
+    display: block;
+    margin: 50px; } }
 
 @media screen and (max-width: 800px) {
   h1 {
     text-align: center !important; }
+  .internal-content {
+    margin: 10px 0; }
   #corner-box {
     width: 175px;
     height: 143px; }
