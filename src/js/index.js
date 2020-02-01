@@ -1,3 +1,5 @@
+import '../css/main.scss'
+
 import Fx from './scroll-fx.js'
 import Maps from './maps.js'
 import Tracker from './tracking.js'
