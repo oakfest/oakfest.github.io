@@ -68,6 +68,9 @@ module.exports = function (env) {
                 cleanOnceBeforeBuildPatterns: ['assets/dist'].concat(pages)
             }),
             new ManifestPlugin(),
+            new MiniCssExtractPlugin({
+                filename: '[name].[chunkhash].css',
+            }),
             new HtmlWebpackPlugin({
                 filename: __dirname + '/index.html',
                 template: __dirname + '/src/index.ejs',
