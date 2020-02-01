@@ -2,6 +2,7 @@
 !src/
 !src/*
 !2018/*
+!2019/*
 !.gitignore
 !LICENSE
 !README.md
