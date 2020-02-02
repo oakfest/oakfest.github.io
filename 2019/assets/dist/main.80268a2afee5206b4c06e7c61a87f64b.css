@@ -707,7 +707,7 @@ footer {
     width: 600px !important; } }
 
 #link2020 {
-  position: fixed;
+  position: absolute;
   bottom:20%;
   z-index: 3000;
   padding: 20px;
