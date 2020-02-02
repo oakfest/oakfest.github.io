@@ -11,8 +11,8 @@ const dist = path.resolve(__dirname, 'assets/dist');
 const sponsors = require('./sponsor-list');
 
 const pages = [
-    'sponsors',
-    'faqs'
+  //  'sponsors',
+  //  'faqs'
 ];
 
 module.exports = function (env) {
@@ -52,7 +52,10 @@ module.exports = function (env) {
                     use: [
                         {
                             loader: 'file-loader',
-                        }
+                            options: {
+                                esModule: false,
+                            },
+                        },
                     ]
                 }
             ]

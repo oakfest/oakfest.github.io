@@ -708,14 +708,14 @@ footer {
 
 #link2020 {
   position: fixed;
-  right: 0;
+  bottom:20%;
   z-index: 3000;
   padding: 20px;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   margin: 10px;
-  background-color: #f03f37;
+  background-color: #024238;
   cursor: pointer;
   width: 200px; }
   #link2020:hover {
-    background-color: #f03f37cf !important; }
+    background-color: #024238bf !important; }
