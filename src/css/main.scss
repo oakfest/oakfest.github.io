@@ -193,6 +193,7 @@ section, footer {
   bottom: 5px;
   width: 100%;
   text-shadow: 1px 1px 4px black;
+  overflow: hidden;
 
   span {
     padding: 5px;
@@ -223,12 +224,6 @@ section, footer {
   }
 }
 
-.sponsors {
-  ul {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 .call-to-action .btn {
   display: block;
   margin: 50px;
@@ -238,17 +233,6 @@ section, footer {
 
   h1 {
     text-align: center !important;
-  }
-
-  .sponsors {
-    ul {
-      display: block;
-
-      li {
-        display: inline-block;
-        width: 80%;
-      }
-    }
   }
 
   .jumbo {

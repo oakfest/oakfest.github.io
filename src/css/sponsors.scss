@@ -79,3 +79,32 @@
     }
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .sponsors {
+    ul {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sponsors {
+    ul {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sponsors {
+    ul {
+      display: block;
+
+      li {
+        display: inline-block;
+        width: 80%;
+      }
+    }
+  }
+}
