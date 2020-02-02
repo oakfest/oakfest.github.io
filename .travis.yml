@@ -19,7 +19,7 @@ install:
 before_deploy:
   - rm .gitignore
   - rm src -r
-  - rm node_modules -r
+  - rm node_modules -rf
   - rm package.json
   - rm yarn.lock
   - rm webpack.config.js
