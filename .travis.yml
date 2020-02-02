@@ -22,7 +22,7 @@ before_deploy:
   - rm node_modules -rf
   - rm package.json
   - rm yarn.lock
-  - rm webpack.data.js
+  - rm webpack.config.js
   - rm data.js
   - rm log.txt
 
