@@ -25,10 +25,11 @@ h1 {
   text-transform: uppercase;
 }
 
-a {
+a, .tickets-btn {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn {
@@ -40,6 +41,7 @@ a {
   background-color: #9fc2c0e3;
   min-width: 165px;
 }
+
 .no-wrap {
   white-space: nowrap;
 }
