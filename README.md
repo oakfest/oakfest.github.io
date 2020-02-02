@@ -6,17 +6,16 @@
 Make all pull requests to develop. All changes to develop are automatically built and deployed to master by travisci.
 Pull requests containing corrections, typo fixes, rewording, or additional info are greatly appreciated.
 
-### Homepage
-Changes to the homepage can be made at [src/index.ejs](https://github.com/oakfest/oakfest.github.io/tree/develop/src/index.ejs).
+### Site content
 
-### Sponsors
-The sponsors page is generated from the list of sponsors in [sponsor-list.js](https://github.com/oakfest/oakfest.github.io/blob/develop/sponsor-list.js).
+All of the site content is generated from [data.js](https://github.com/oakfest/oakfest.github.io/blob/develop/data.js).
+You can edit anything on the site by changing it in that file. All of the sponsors are in there too and the list of rules and faqs.
+
 All sponsor images are stored in [src/images/sponsors](https://github.com/oakfest/oakfest.github.io/tree/develop/src/images/sponsors). 
-Logos can be updated by just overwriting the images in that directory. Other changes to the sponsor page can be made at
-[src/sponsors.ejs](https://github.com/oakfest/oakfest.github.io/tree/develop/src/sponsors.ejs).
+Logos can be updated by just overwriting the images in that directory.
 
 ## Building Locally
 ```
-$ npm install
-$ npm run build
+$ yarn install
+$ yarn run build
 ```

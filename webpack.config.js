@@ -8,12 +8,8 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const dist = path.resolve(__dirname, 'assets/dist');
-const sponsors = require('./sponsor-list');
-
-const pages = [
-  //  'sponsors',
-  //  'faqs'
-];
+const siteData = require('./data');
+const pages = siteData.pages;
 
 module.exports = function (env) {
     return {
@@ -26,6 +22,7 @@ module.exports = function (env) {
             path: dist,
             publicPath: '/assets/dist/'
         },
+
 
         module: {
             rules: [
@@ -57,6 +54,14 @@ module.exports = function (env) {
                             },
                         },
                     ]
+                },
+                {
+                    test: /\.ejs$/,
+                    use: [
+                        {
+                            loader: 'ejs-loader',
+                        },
+                    ]
                 }
             ]
         },
@@ -66,6 +71,9 @@ module.exports = function (env) {
         },
 
         plugins: [
+            new webpack.ProvidePlugin({
+                _: "underscore"
+            }),
             new CleanWebpackPlugin({
                 dry: true,
                 cleanOnceBeforeBuildPatterns: ['assets/dist'].concat(pages)
@@ -76,8 +84,7 @@ module.exports = function (env) {
             }),
             new HtmlWebpackPlugin({
                 filename: __dirname + '/index.html',
-                template: __dirname + '/src/index.ejs',
-                loader: 'ejs-loader'
+                template:  __dirname + '/src/index.ejs',
             })
         ].concat(pages.map(page => {
 
@@ -85,7 +92,6 @@ module.exports = function (env) {
             return new HtmlWebpackPlugin({
                 filename: __dirname + '/' + page + '/index.html',
                 template: __dirname + '/src/' + page + '.ejs',
-                sponsors: sponsors
             })
         }))
     };

@@ -1,62 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Oakfest 2019 :: Hiss Golden Messenger w/ Neighbor Lady - March 16</title>
-
-    <meta charset="utf-8">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="msvalidate.01" content="AD7F9F8C39457A65A5B805366C459B80"/>
-
-    <meta name="keywords"
-          content="Oakfest, Thomasville, GA, Georgia, Music, Festival, Hiss Golden Messenger, Neighbor Lady, Treehouse, Kiwanis, Concert, Food, Beer, Wine, Jam, Band">
-    <meta name="description"
-          content="OakFest is back in 2019 with Hiss Golden Messenger and Neighbor Lady. The afternoon will be jam packed with all of your favorite local bands. Come enjoy food trucks, beer and wine garden, and a great afternoon in Thomasville. All proceeds will go directly to The Treehouse Advocacy Center of Thomas County.">
-
-    <meta name="geo.region" content="US-GA"/>
-    <meta name="geo.placename" content="Thomasville"/>
-
-    <link rel="canonical" href="https://oakfest.net/"/>
-    <link rel="publisher" href="https://plus.google.com/+NimbleCMS">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="<%= require('./images/favicon/favicon-57x57.png') %>">
-    <link rel="apple-touch-icon" sizes="60x60" href="<%= require('./images/favicon/favicon-60x60.png') %>">
-    <link rel="apple-touch-icon" sizes="72x72" href="<%= require('./images/favicon/favicon-72x72.png') %>">
-    <link rel="apple-touch-icon" sizes="76x76" href="<%= require('./images/favicon/favicon-76x76.png') %>">
-    <link rel="apple-touch-icon" sizes="114x114" href="<%= require('./images/favicon/favicon-114x114.png') %>">
-    <link rel="apple-touch-icon" sizes="120x120" href="<%= require('./images/favicon/favicon-120x120.png') %>">
-    <link rel="apple-touch-icon" sizes="144x144" href="<%= require('./images/favicon/favicon-144x144.png') %>">
-    <link rel="apple-touch-icon" sizes="152x152" href="<%= require('./images/favicon/favicon-152x152.png') %>">
-    <link rel="apple-touch-icon" sizes="180x180" href="<%= require('./images/favicon/favicon-180x180.png') %>">
-
-    <link rel="icon" type="image/png" href="<%= require('./images/favicon/favicon-32x32.png') %>" sizes="32x32">
-    <link rel="icon" type="image/png" href="<%= require('./images/favicon/favicon-194x194.png') %>" sizes="194x194">
-    <link rel="icon" type="image/png" href="<%= require('./images/favicon/favicon-96x96.png') %>" sizes="96x96">
-    <link rel="icon" type="image/png" href="<%= require('./images/favicon/favicon-192x192.png') %>" sizes="192x192">
-    <link rel="icon" type="image/png" href="<%= require('./images/favicon/favicon.png') %>" sizes="16x16">
-
-    <link rel="manifest" href="/manifest.json">
-
-    <meta name="msapplication-TileColor" content="#fff">
-    <meta name="msapplication-TileImage" content="<%= require('./images/favicon/favicon-144x144.png') %>">
-    <meta name="theme-color" content="#ffffff">
-
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Montserrat:400,900" rel="stylesheet">
-
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113482311-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'UA-113482311-1');
-    </script>
+    <% const data = require('../data'); %>
+    <%= require('./_header.ejs')() %>
+    <title><%= data.title %> <%= data.tagline %></title>
 </head>
 <body>
 <section class="jumbo">
@@ -71,11 +18,18 @@
             <span><span id="count-minutes" class="time">0</span> Minutes</span>
             <span><span id="count-seconds" class="time">0</span> Seconds</span>
         </div>
+
+        <a class="btn" href="/sponsors">
+            Sponsors
+        </a>
+        <a class="btn" href="/faqs">
+            FAQs
+        </a>
+        <a class="btn" href="#" title="Tickets" rel="On sale February 4th!" onclick="var a=this.rel,b='Tickets';if(this.title===b){this.innerText=a;this.title=a;}else{this.innerText=b;this.title=b;}">
+            Tickets
+        </a>
     </div>
-    <section class="post-footer">
-        <span style="float:left">© 2020 Thomasville Kiwanis Club</span>
-        <a href="/2019" title="Visit 2019 Site">2019 ↝</a>
-    </section>
+    <%= require('./_footer.ejs')() %>
 </section>
 </body>
 </html>

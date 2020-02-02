@@ -1,225 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Oakfest 2019 :: FAQs and Rules</title>
-
-    <meta charset="utf-8">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="msvalidate.01" content="AD7F9F8C39457A65A5B805366C459B80"/>
-
-    <meta name="keywords"
-          content="Oakfest, Thomasville, GA, Georgia, Music, Festival, Hiss Golden Messenger, Neighbor Lady, Treehouse, Kiwanis, Concert, Food, Beer, Wine, Jam, Band">
-    <meta name="description"
-          content="OakFest is back in 2019 with Hiss Golden Messenger and Neighbor Lady. The afternoon will be jam packed with all of your favorite local bands. Come enjoy food trucks, beer and wine garden, and a great afternoon in Thomasville. All proceeds will go directly to The Treehouse Advocacy Center of Thomas County.">
-
-    <meta name="geo.region" content="US-GA"/>
-    <meta name="geo.placename" content="Thomasville"/>
-
-    <link rel="canonical" href="https://oakfest.net/"/>
-    <link rel="publisher" href="https://plus.google.com/+NimbleCMS">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="<%= require('./images/favicon/favicon-57x57.png') %>">
-    <link rel="apple-touch-icon" sizes="60x60" href="<%= require('./images/favicon/favicon-60x60.png') %>">
-    <link rel="apple-touch-icon" sizes="72x72" href="<%= require('./images/favicon/favicon-72x72.png') %>">
-    <link rel="apple-touch-icon" sizes="76x76" href="<%= require('./images/favicon/favicon-76x76.png') %>">
-    <link rel="apple-touch-icon" sizes="114x114" href="<%= require('./images/favicon/favicon-114x114.png') %>">
-    <link rel="apple-touch-icon" sizes="120x120" href="<%= require('./images/favicon/favicon-120x120.png') %>">
-    <link rel="apple-touch-icon" sizes="144x144" href="<%= require('./images/favicon/favicon-144x144.png') %>">
-    <link rel="apple-touch-icon" sizes="152x152" href="<%= require('./images/favicon/favicon-152x152.png') %>">
-    <link rel="apple-touch-icon" sizes="180x180" href="<%= require('./images/favicon/favicon-180x180.png') %>">
-
-    <link rel="icon" type="image/png" href="<%= require('./images/favicon/favicon-32x32.png') %>" sizes="32x32">
-    <link rel="icon" type="image/png" href="<%= require('./images/favicon/favicon-194x194.png') %>" sizes="194x194">
-    <link rel="icon" type="image/png" href="<%= require('./images/favicon/favicon-96x96.png') %>" sizes="96x96">
-    <link rel="icon" type="image/png" href="<%= require('./images/favicon/favicon-192x192.png') %>" sizes="192x192">
-    <link rel="icon" type="image/png" href="<%= require('./images/favicon/favicon.png') %>" sizes="16x16">
-
-    <link rel="manifest" href="/2019/manifest.json">
-
-    <meta name="msapplication-TileColor" content="#fff">
-    <meta name="msapplication-TileImage" content="<%= require('./images/favicon/favicon-144x144.png') %>">
-    <meta name="theme-color" content="#ffffff">
-
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Montserrat:400,900" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113482311-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'UA-113482311-1');
-    </script>
+    <% const data = require('../data'); %>
+    <%= require('./_header.ejs')() %>
+    <title><%= data.title %> FAQs and Rules</title>
 </head>
 <body class="internal">
-<a id="link2020" href="/">
-    <span>We are back in 2020!</span>
-</a>
-<div id="corner-box" class="primary">
-    <a href="/2019/" class="plain-logo"></a>
-</div>
-<nav id="nav">
-    <div class="nav-bar">
-        <div class="left-logo">
-            <div class="oak-fest">
-                <a href="#" title="Back to Top">
-                    <!--img src="<%= require('./images/logo_plain_white.png') %>" alt="Back to Top"-->
-                </a>
-            </div>
-        </div>
-
-        <ul class="buttons">
-            <li><a href="/2019/" class="tag" rel="home">Home</a></li>
-            <li>
-                <a href="/"
-                   class="tag"
-                   title="2020">Go to 2020 site</a>
-            </li>
-            <li><a href="/2019/#about" class="tag" rel="about">About</a></li>
-            <li><a href="/2019/#bands" class="tag" rel="bands">The Bands</a></li>
-            <li><a href="/2019/sponsors" class="active tag" rel="sponsors">Sponsors</a></li>
-        </ul>
-    </div>
-</nav>
-<section class="primary-lighter jumbo faqs">
-    <div class="bg"></div>
-    <ul class="rules internal-content">
-        <li>
-            <h4>What are the dates and hours?</h4>
-            <div>
-                Saturday March 16, 2019. Doors 3:00pm, First Band 3:30pm, End 10:00pm EST
-            </div>
-        </li>
-        <li>
-            <h4>How do I get there?</h4>
-            <div>
-                Oakfest will be held at the Ritz Ampitheater 131 S Stevens St, Thomasville, GA 31792
-                <br />
-                <br />
-                We will have two ticket gates - one by the amphitheater stage on Stevens Street and one through the open alleyway next to Empire Bagel on Jackson Street.
-                If your General Admission includes a t-shirt, you can pick up your shirt at the merchandise table. If you did not pre-buy a t-shirt, we have a merchandise table!
-                There are hats, t-shirts, and stickers available for purchase. We accept both cash and card for purchases.
-
-            </div>
-        </li>
-        <li>
-            <h4>Where can I find parking and ATMs?</h4>
-            <div>
-                <a href="https://thomasvillega.com/uploads/groups/3/Attractions/Festivals/Downtown-Parking.jpg" target="_blank">Parking and ATM Map</a>
-            </div>
-        </li>
-        <li>
-            <h4>What can I bring?</h4>
-            <div>
-                DO BRING:
-                <ul>
-                    <li>Lawn Chairs</li>
-                    <li>Your ticket(s). This can be printed or on your phone.</li>
-                    <li>Sleeves! It will be chilly at night</li>
-                    <li>Blankets for warmth (not for picnicking)</li>
-                    <li>Cash (We accept Visa, MasterCard, American Express, Discover, JCB, or UnionPay. Some vendors may only accept cash)</li>
-                    <li>All of your friends</li>
-                </ul>
-                <br />
-                DO NOT BRING:
-                <ul>
-                    <li>Coolers, cups, or drinks from outside the venue.</li>
-                    <li>Picnic blankets</li>
-                    <li>Tents</li>
-                    <li>Pets</li>
-                    <li>Drones or aircraft</li>
-                    <li>Fireworks</li>
-                    <li>Weapons of any kind</li>
-                    <li>Illegal substances</li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <h4>What will be available for food and drink?</h4>
-            There will be four food trucks, so you'll have plenty of variety! Additionally, Smith Collective will be selling popsicles and Kona Ice will have shaved ice.
-            In order to enjoy beer or wine, you will first need to purchase a drink ticket ($5 each). One ticket=one drink.
-            <br />
-            <br />
-            We will have a separate table for drink ticket purchases (your ID will be checked at the gate where you will receive an additional armband that signifies you are of drinking age).
-        </li>
-        <li>
-            <h4>How do I pick up my VIP tickets?</h4>
-            <div>
-                If you are a VIP ticket holder, we have two options for ticket/drink ticket/t-shirt pick up.
-                We will be at Hubs & Hops on Jackson Street from 4:30pm-8:00pm on Friday, March 15 if you'd like to pick up your goodies ahead of time.
-                If you'd rather wait until the day of, we'll have everything for you at the ticket gate.
-            </div>
-        </li>
-        <li>
-            <h4>Where is the VIP area?</h4>
-            <div>
-                The VIP area will be held at Hubs & Hops.
-                VIP drink tickets will work inside Hubs & Hops and outside - a drink ticket purchased at the drink ticket table by the beer and wine truck will not work inside the VIP area.
-                Appetizers and dinner will be served inside the event space adjacent to Hubs & Hops. You may enter both venues through the back porch.
-                <br />
-                <br />
-                Dinner will be served from 5:00pm-7:00pm.
-            </div>
-        </li>
-    </ul>
-</section>
-
-<footer class="secondary pad">
-    <div class="col one left">
-        <a href="http://treehousethomasville.org/" title="The Treehouse" rel="treehouse" class="tag">
-            <img src="<%= require('./images/treehouse_logo.png') %>" alt="The Treehouse"/>
+<section class="jumbo faqs">
+    <div class="faqs-nav">
+        <h2>FAQs and Rules</h2>
+        <a class="btn" href="/">
+            Back to Countdown
+        </a>
+        <a class="btn" href="mailto:contact@oakfest.net">
+            Contact Us
         </a>
     </div>
-    <div class="col two center">
-        <a href="#" title="Back to Top">
-            <img src="<%= require('./images/logo_plain_white.png') %>" alt="Back to Top"/>
-        </a>
+    <div class="rules internal-content">
+        <%= require('./js/generate').treeContent(data.faqs) %>
     </div>
-    <div class="col three right">
-        <div>
-            <h1 class="right">contact us</h1>
-            <p class="social">
-                <a href="https://www.facebook.com/events/2244432225815329/" class="tag" rel="facebook" title="Facebook">
-                    <span class="fab fa-facebook-square fa-3x"></span>
-                </a>
-                <a href="https://www.instagram.com/kiwanis.satellite" class="tag" rel="instagram" title="Instagram">
-                    <span class="fab fa-instagram fa-3x"></span>
-                </a>
-                <a href="mailto:contact@oakfest.net" class="tag" rel="contact" title="Email Us">
-                    <span class="far fa-envelope fa-3x"></span>
-                </a>
-                <a href="https://github.com/oakfest" class="tag" rel="github" title="Fork us on GitHub">
-                    <span class="fab fa-github fa-3x"></span>
-                </a>
-                <a href="https://nimblecms.com" class="tag nimble-logo" rel="nimble"
-                   title="Design by Jessie & John @ NimbleCMS">
-                    <img src="<%= require('./images/nimble-logo.png') %>" style="height: 40px;" alt="NimbleCMS">
-                </a>
-                <a href="https://open.spotify.com/user/g5joenmbzfrwkg4gg0760qfhm?si=oVgZibovS72ar6wNm9UPDQ" class="tag"
-                   rel="spotify" title="Follow us on Spotify">
-                    <span class="fab fa-spotify fa-3x"></span>
-                </a>
-            </p>
-            <br/>
-            <a href="/"
-               class="btn btn-secondary active tag"
-               title="2020">
-                Go to 2020 Site
-            </a>
-        </div>
-    </div>
-</footer>
-<section class="post-footer">
-    <span style="float:left">
-        © 2019 Thomasville Kiwanis Club
-    </span>
-    <a href="/2018" title="2018 Site">2018 Site ↝</a>
+
+    <br />
+    <br />
+    <br />
+    <%= require('./_footer.ejs')() %>
 </section>
 </body>
 </html>

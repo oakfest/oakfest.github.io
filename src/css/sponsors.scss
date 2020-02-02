@@ -1,0 +1,81 @@
+
+.sponsors {
+  text-align: center;
+
+  ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 200;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 5px;
+      height: 250px;
+      border: 2px solid #fff;
+
+      a {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-shadow: 1px 1px 1px #313131;
+
+        .img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          position: relative;
+
+          img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            max-width: 90%;
+            max-height: 100%;
+            overflow: auto;
+          }
+
+          .tiny {
+            width: 50% !important;
+          }
+        }
+
+        .undercard {
+          display: none;
+        }
+
+        .undercard, .img .text {
+          white-space: pre-wrap;
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+        &:hover {
+          .img {
+            display: none;
+          }
+
+          .undercard {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
