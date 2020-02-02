@@ -1,12 +1,13 @@
 language: node_js
 
 node_js:
-  - "7"
+  - "12"
 
 # prevent infinite looping build
 branches:
   except:
     - master
+    - 2020-redesign
 
 before_install:
   - npm i -g npm@4.2.0
@@ -18,7 +19,7 @@ install:
 before_deploy:
   - rm .gitignore
   - rm src -r
-  - rm node_modules -r
+  - rm node_modules -rf
   - rm package.json
   - rm yarn.lock
   - rm webpack.config.js
