@@ -19,4 +19,3 @@ countdown(
     'count-minutes',
     'count-seconds'
 );
-
