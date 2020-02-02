@@ -23,6 +23,7 @@ before_deploy:
   - rm package.json
   - rm yarn.lock
   - rm webpack.config.js
+  - rm data.js
 
 deploy:
   provider: pages
