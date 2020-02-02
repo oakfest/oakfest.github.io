@@ -1,25 +1,24 @@
 const path = require('path');
 const webpack = require("webpack");
 
-const MinifyPlugin = require("babel-minify-webpack-plugin");
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const dist = path.resolve(__dirname, 'assets/dist');
 const sponsors = require('./sponsor-list');
 
 const pages = [
-    'sponsors',
-    'faqs'
+  //  'sponsors',
+  //  'faqs'
 ];
 
 module.exports = function (env) {
-    const config = {
+    return {
         entry: {
-            'oak.min': './src/js/index.js',
-            'main': './src/css/main.scss'
+            'oak.min': './src/js/index.js'
         },
 
         output: {
@@ -41,22 +40,22 @@ module.exports = function (env) {
                     }
                 },
                 {
-                    test: /\.css$/,
-                    loader: ExtractTextPlugin.extract({
-                        use: 'css-loader?-url'
-                    })
-                },
-                {
-                    test: /\.(sass|scss)$/,
-                    loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+                    test: /\.s?[a|c]ss$/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        "css-loader",
+                        "sass-loader",
+                    ]
                 },
                 {
                     test: /\.(png|jpg|gif|svg|woff|woff2|webp)$/,
                     use: [
                         {
                             loader: 'file-loader',
-                            options: {}
-                        }
+                            options: {
+                                esModule: false,
+                            },
+                        },
                     ]
                 }
             ]
@@ -67,23 +66,19 @@ module.exports = function (env) {
         },
 
         plugins: [
-            new CleanWebpackPlugin(['assets/dist'].concat(pages), {
-                root: __dirname + '/'
+            new CleanWebpackPlugin({
+                dry: true,
+                cleanOnceBeforeBuildPatterns: ['assets/dist'].concat(pages)
             }),
             new ManifestPlugin(),
-            new MinifyPlugin({}, {
-                test: /\.min\./,
-            }),
-            new ExtractTextPlugin({
-                filename: '[name].[contenthash].css',
-                allChunks: true,
+            new MiniCssExtractPlugin({
+                filename: '[name].[chunkhash].css',
             }),
             new HtmlWebpackPlugin({
                 filename: __dirname + '/index.html',
                 template: __dirname + '/src/index.ejs',
                 loader: 'ejs-loader'
             })
-
         ].concat(pages.map(page => {
 
             // generate static page folders for fancy urls
@@ -94,6 +89,4 @@ module.exports = function (env) {
             })
         }))
     };
-
-    return config;
 };

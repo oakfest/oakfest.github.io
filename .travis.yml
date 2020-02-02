@@ -7,6 +7,7 @@ node_js:
 branches:
   except:
     - master
+    - 2020-redesign
 
 before_install:
   - npm i -g npm@4.2.0

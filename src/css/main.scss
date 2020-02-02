@@ -76,15 +76,11 @@ section, footer {
 #corner-box {
   height: 230px;
   width: 280px;
-  display: block;
+  display: none;
   position: absolute;
   z-index: 2000;
   top: 0;
   padding: 20px;
-
-  &:hover {
-    background-color: #fbdea7;
-  }
 
   .plain-logo {
     height: inherit;
@@ -100,8 +96,10 @@ section, footer {
   min-height: 720px;
   max-height: 1200px;
   padding: 0;
+  background: linear-gradient(-45deg, #ffffff, #a0e6cf, #9fb2b9, #f78f1f) !important;
 
   .bg {
+    display: none;
     z-index: 25;
   }
 
@@ -116,11 +114,13 @@ section, footer {
     height: 500px;
     text-align: center;
     margin: 0 auto;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 10%;
+  //  -ms-transform: translateY(-20%);
+   // transform: translateY(-20%);
 
     .wbw-sign {
+      display: none;
+
       img {
         margin-top: 30px;
         -ms-margin-top: -20px;
@@ -145,20 +145,14 @@ section, footer {
       padding: 10px 25px 20px 20px;
       text-decoration: none !important;
       display: inline-block;
-      background-color: #90cac0;
-      clip-path: polygon(0px 400px, 320px 400px, 400px 0px, 80px 0px);
-
-      &:hover {
-        background-color: #146154;
-      }
     }
 
     span {
       text-transform: uppercase;
       text-align: justify;
       text-align-last: center;
-      margin: 0 auto;
-      display: block;
+      display: inline-block;
+      margin: 10px;
       font-size: 2em;
     }
 
@@ -173,9 +167,13 @@ section, footer {
     .date {
       font-family: 'Ostrich Sans', sans-serif;
       font-weight: 600;
-      font-size: 4em;
-      line-height: 40px;
-      letter-spacing: 3px;
+      font-size: 2em;
+
+      .time {
+        font-family: sans-serif !important;
+        display: inline-block;
+        margin: 0;
+      }
     }
   }
 }
@@ -495,6 +493,7 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+
   h1 {
     text-align: center !important;
   }
@@ -502,7 +501,6 @@ footer {
   .internal-content {
     margin: 10px 0;
   }
-
 
 
   #corner-box {
@@ -578,17 +576,6 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
-  .jumbo {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-  }
-
-  section, footer {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
   .band {
     &:hover {
       .logo {
@@ -598,3 +585,19 @@ footer {
   }
 }
 
+#link2020 {
+  position: fixed;
+  right: 0;
+  z-index: 3000;
+  padding: 20px;
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  margin: 10px;
+  background-color: #f03f37;
+  cursor: pointer;
+  width: 200px;
+
+  &:hover {
+    background-color: #f03f37cf !important;
+  }
+}
