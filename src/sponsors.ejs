@@ -17,7 +17,7 @@
         </a>
     </div>
     <ul>
-        <% for(let i in data.sponsors){ %>
+        <% for(let i in data.sponsors){ if (data.sponsors[i].disabled) continue; %>
             <li style="<%= '-ms-grid-row: ' + (Math.floor(i / 4) + 1) + '; -ms-grid-column: ' + ((i % 4) + 1) + ';' %>">
                 <a href="<%= data.sponsors[i].url %>"
                    class="<%= data.sponsors[i].level %>"

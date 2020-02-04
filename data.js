@@ -1,12 +1,16 @@
 /***********************************************************************************************************
  |
- | Site data - All site content is in this file. Updates to this file will update the content on the site
+ | Oakfest Site data
+ |    -> All site content is in this file. Updates to this file will update the content on the site
+ |    -> This file lives at https://github.com/oakfest/oakfest.github.io/blob/develop/data.js and
+ |       can be edited there if you ask John nicely for permission.
  |
  ***********************************************************************************************************/
 
 const data = {
     title: 'Oakfest 2020 ::',
     tagline: `Cordovas w/ Heart of Pine & The Bo Henry Band`,
+    tickets: 'https://www.eventbrite.com/e/oakfest-2020-cordovasthe-bo-henry-bandheart-of-pinerachel-hillman-tickets-91164269785',
 
     pages: [
         'sponsors',
@@ -20,9 +24,7 @@ const data = {
 };
 
 /***********************************************************************************************************
- |
  | About
- |
  ***********************************************************************************************************/
 
 data.about = `
@@ -45,9 +47,7 @@ data.about = `
 `;
 
 /***********************************************************************************************************
- |
  | SEO
- |
  ***********************************************************************************************************/
 
 data.meta = {
@@ -79,9 +79,7 @@ data.meta = {
 };
 
 /***********************************************************************************************************
- |
  | Rules and FAQs
- |
  ***********************************************************************************************************/
 
 data.faqs = {
@@ -134,16 +132,12 @@ data.faqs = {
 };
 
 /***********************************************************************************************************
- |
  | Sponsors
- |
  ***********************************************************************************************************/
 
 data.sponsors = [
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // PRESENTING
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // PRESENTING //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
         level: "presenting",
@@ -152,14 +146,10 @@ data.sponsors = [
         logo: "wbw.svg"
     },
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // PLATINUM
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // PLATINUM //////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // GOLD
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // GOLD //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
         level: "gold",
@@ -168,11 +158,7 @@ data.sponsors = [
         logo: ""
     },
 
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // SILVER
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+    // SILVER //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
         level: "silver",
@@ -217,7 +203,7 @@ data.sponsors = [
         logo: "srtc.png"
     },
 
-    // BRONZE
+    // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
         level: "bronze",
@@ -296,192 +282,214 @@ data.sponsors = [
         url: "https://susieqsfoods.com/",
         logo: "susie.png"
     },
-];
 
-/***********************************************************************************************************
- |
- | Past Sponsors
- |
- ***********************************************************************************************************/
-
-data.pastSponsors = [
+    // DISABLED //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
         level: "silver",
         name: "Taylor Benefit Resource",
         url: "http://www.tbrtpa.com/",
-        logo: "tbr.svg"
+        logo: "tbr.svg",
+        disabled: true
     },
 
     {
         level: "silver",
         name: "Wendy's",
         url: "https://www.wendys.com/",
-        logo: "wendys.png"
+        logo: "wendys.png",
+        disabled: true
     },
     {
         level: "silver",
         name: "J. Smith Lanier & Co.\nA Marsh & McLennan Agency LLC company",
         url: "http://www.jsmithlanier.com/",
-        logo: "jsmith.jpg"
+        logo: "jsmith.jpg",
+        disabled: true
     },
     {
         level: "silver",
         name: "Cives Steel Company",
         url: "http://www.cives.com/southern",
-        logo: "cives.png"
+        logo: "cives.png",
+        disabled: true
     },
     {
         level: "silver",
         name: "Cleaver Brooks\nComplete Boiler Room Solutions",
         url: "http://www.cleaverbrooks.com/",
-        logo: "cleaver.png"
+        logo: "cleaver.png",
+        disabled: true
     },
     {
         level: "silver",
         name: "Factor X Fitness",
         url: "https://www.factorxfitness.com/",
-        logo: "factor.png"
+        logo: "factor.png",
+        disabled: true
     },
     {
         level: "silver",
         name: "Long & Company CPA's LLC",
         url: "https://www.longcocpa.com/",
-        logo: ""
+        logo: "",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Element Style Bar",
         url: "https://www.facebook.com/laurendeeabbey/",
-        logo: "element.png"
+        logo: "element.png",
+        disabled: true
     },
 
     {
         level: "bronze",
         name: "Synovus Bank",
         url: "https://synovus.com",
-        logo: "synovus.png"
+        logo: "synovus.png",
+        disabled: true
     },
 
     {
         level: "bronze",
         name: "Caldwell & Langford Insurance",
         url: "http://caldwellandlangford.com/",
-        logo: "caldwell.svg"
+        logo: "caldwell.svg",
+        disabled: true
     },
 
     {
         level: "bronze",
         name: "Henderson's Restaurant",
         url: "http://hendersonsofthomasville.com/",
-        logo: "hendersons.svg"
+        logo: "hendersons.svg",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Sampson's Paint and Decorating",
         url: "http://paintstore.benjaminmoore.com/stores/us/ga/thomasville/sampsons-paint-decorating-inc?lang=en_CA",
         logo: "sampsons.png",
-        tiny: true
+        tiny: true,
+        disabled: true
     },
     {
         level: "bronze",
         name: "State Farm\nPatrick Scarborough",
         url: "https://www.tvilleinsurance.com/",
-        logo: "state-farm.svg"
+        logo: "state-farm.svg",
+        disabled: true
     },
     {
         level: "bronze",
         name: "AgPro Companies",
         url: "https://www.agprocompanies.com/",
         logo: "agpro.png",
-        tiny: true
+        tiny: true,
+        disabled: true
     },
     {
         level: "bronze",
         name: "Teramore Development",
         url: "http://www.teramore.net/",
         logo: "teramore.png",
-        tiny: true
+        tiny: true,
+        disabled: true
     },
     {
         level: "bronze",
         name: "Nutrien Ag Solutions",
         url: "https://www.nutrienagsolutions.com/",
-        logo: "nutrien.png"
+        logo: "nutrien.png",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Lanigan & Associates P.C.",
         url: "https://lanigancpa.com/",
-        logo: "lanigan.svg"
+        logo: "lanigan.svg",
+        disabled: true
     },
 
     {
         level: "bronze",
         name: "The Avenues\nReal Estate Partners",
         url: "http://theavenuesrealestate.com/",
-        logo: "avenues.png"
+        logo: "avenues.png",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Potty Man\nPortable Toilet Rentals",
         url: "https://pottyman.net/",
-        logo: "pottyman.png"
+        logo: "pottyman.png",
+        disabled: true
     },
     {
         level: "bronze",
         name: "TC Federal Bank",
         url: "https://www.tcfederal.com/",
-        logo: "tcf.png"
+        logo: "tcf.png",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Thomasville National Bank\nTNB Financial",
         url: "https://tnbank.com/",
-        logo: "tnbboth.png"
+        logo: "tnbboth.png",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Collins Pecan",
         url: "https://www.collinspecan.com/",
-        logo: "collins.png"
+        logo: "collins.png",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Performance Food Group",
         url: "http://www.pfgc.com/",
-        logo: "pfg.png"
+        logo: "pfg.png",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Joey's Landscape and Lawn Care Services,\nLLC.",
         url: "http://www.joeyslandscape.com/",
-        logo: "jlls.png"
+        logo: "jlls.png",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Network Technology Solutions",
         url: "https://ntsnetworks.com",
-        logo: "nts.svg"
+        logo: "nts.svg",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Three Toms Tavern",
         url: "#",
-        logo: ""
+        logo: "",
+        disabled: true
     },
     {
         level: "bronze",
         name: "The Orr Family",
         url: "#",
-        logo: ""
+        logo: "",
+        disabled: true
     },
     {
         level: "bronze",
         name: "Ashlyn Williams",
         url: "#",
-        logo: ""
+        logo: "",
+        disabled: true
     }
 ];
+
 
 module.exports = data;
