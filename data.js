@@ -180,7 +180,7 @@ data.sponsors = [
         level: "silver",
         name: "CNS\nInternet - Phone - Digital TV",
         url: "https://www.cns-internet.com",
-        logo: "cns.png"
+        logo: "cns.svg"
     },
 
     {
