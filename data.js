@@ -12,15 +12,16 @@ const data = {
     tagline: `Cordovas w/ Heart of Pine & The Bo Henry Band`,
     tickets: 'https://www.eventbrite.com/e/oakfest-2020-cordovasthe-bo-henry-bandheart-of-pinerachel-hillman-tickets-91164269785',
 
-    pages: [
-        'sponsors',
-        'faqs'
-    ],
-
+    ticketsDate: 'February 4th, 2020',
     date: "March 14, 2020",
     doors: "3:00pm",
     start: "3:30pm",
     end: "10:00pm",
+
+    pages: [
+        'sponsors',
+        'faqs'
+    ],
 };
 
 /***********************************************************************************************************

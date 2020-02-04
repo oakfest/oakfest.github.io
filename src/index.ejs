@@ -22,9 +22,9 @@
         <a class="btn" href="/faqs">
             About Oakfest 2020
         </a>
-        <div class="btn tickets-btn" title="Tickets" onclick="var a='On sale February 4th!',b='Tickets';if(this.title===b){this.innerText=a;this.title=a;}else{this.innerText=b;this.title=b;}">
-            Tickets
-        </div>
+
+        <%= require('./_tickets.ejs')() %>
+
         <a class="btn" href="/sponsors">
             Sponsors
         </a>

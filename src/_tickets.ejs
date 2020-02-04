@@ -1,0 +1,9 @@
+<% const data = require('../data'); %>
+<a href="<%- (data.tickets || '#') %>"
+   class="btn tickets-btn tag"
+   rel="tickets"
+   title="Tickets"
+   data-onsale="<%- (data.tickets ? 'true' : 'false') %>"
+   data-alternate="On Sale <%- data.ticketsDate %>!">
+    Tickets
+</a>
