@@ -8,11 +8,24 @@
  ***********************************************************************************************************/
 
 const data = {
-    title: 'Oakfest 2020 ::',
+    title: 'Oakfest 2020',
     tagline: `Cordovas w/ Heart of Pine & The Bo Henry Band`,
-    tickets: 'https://www.eventbrite.com/e/oakfest-2020-cordovasthe-bo-henry-bandheart-of-pinerachel-hillman-tickets-91164269785',
 
+    bands: [
+        'Cordovas',
+        'Heart of Pine',
+        'The Bo Henry Band'
+    ],
+
+    tickets: 'https://www.eventbrite.com/e/oakfest-2020-cordovasthe-bo-henry-bandheart-of-pinerachel-hillman-tickets-91164269785',
+    ticketPrice: "20",
     ticketsDate: 'February 4th, 2020',
+
+    iso: {
+        start: "2020-03-14T16:00-05:00",
+        end: "2020-03-14T22:00-05:00",
+    },
+
     date: "March 14, 2020",
     doors: "3:00pm",
     start: "3:30pm",

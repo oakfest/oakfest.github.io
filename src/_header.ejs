@@ -37,6 +37,44 @@
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
+
+<% if (config.bands.length > 0 ) { %>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Event",
+        "name": "<%= config.tagline %> @ <%= config.title %>",
+        "startDate": "<%= config.iso.start %>",
+        "location": {
+            "@type": "Place",
+            "name": "Thomasville Amphitheater",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "215 West Jefferson Street",
+                "addressLocality": "Thomasville",
+                "postalCode": "31792",
+                "addressRegion": "GA",
+                "addressCountry": "US"
+            }
+        },
+        "description": "<%- config.meta.description.replace(/(\s)+/ig, " ") %>",
+        "endDate": "<%= config.iso.end %>",
+        "offers": {
+            "@type": "Offer",
+            "url": "<%= config.tickets %>",
+            "price": "<%= config.ticketPrice %>",
+            "priceCurrency": "USD",
+            "availability": "http://schema.org/InStock",
+            "validFrom": "<%= (new Date()).getFullYear() %>-01-01T00:00-05:00"
+        },
+        "performer": {
+            "@type": "PerformingGroup",
+            "name": "<%= config.bands[0] %>"
+        }
+    }
+</script>
+<% } %>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113482311-1"></script>
 <script>
