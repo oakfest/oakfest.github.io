@@ -321,7 +321,7 @@ data.sponsors = [
     {
         level: "bronze",
         name: "Henderson's Restaurant",
-        url: "http://hendersonsofthomasville.com/",
+        url: "https://www.facebook.com/Hendersons-Restaurant-142254725834639/",
         logo: "hendersons.svg"
     },
 
