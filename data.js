@@ -298,7 +298,7 @@ data.sponsors = [
     },
 
     {
-        level: "silver",
+        level: "bronze",
         name: "J. Smith Lanier & Co.\nA Marsh & McLennan Agency LLC company",
         url: "http://www.jsmithlanier.com/",
         logo: "jsmith.jpg"
