@@ -328,7 +328,7 @@ data.sponsors = [
     {
         level: "bronze",
         name: "Sampson's Paint and Decorating",
-        url: "http://paintstore.benjaminmoore.com/stores/us/ga/thomasville/sampsons-paint-decorating-inc?lang=en_CA",
+        url: "https://www.benjaminmoore.com/en-us/store-locator/10006520/sampsons-paint-decorating-inc",
         logo: "sampsons.png",
         tiny: true
     },
