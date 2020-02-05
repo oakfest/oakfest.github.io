@@ -217,6 +217,13 @@ data.sponsors = [
         logo: "srtc.png"
     },
 
+    {
+        level: "silver",
+        name: "Carroll's Cabinets & Counters",
+        url: "http://carrollscabinetsandcounters.com/",
+        logo: "carroll.png"
+    },
+
     // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -347,6 +354,28 @@ data.sponsors = [
         logo: "oilon.png"
     },
 
+    {
+        level: "bronze",
+        name: "H&H Engraving",
+        url: "https://www.facebook.com/hhengraving",
+        logo: "hh.jpg",
+        tiny: true
+    },
+
+    {
+        level: "bronze",
+        name: "Potty Man\nPortable Toilet Rentals",
+        url: "https://pottyman.net/",
+        logo: "pottyman.png"
+    },
+
+    {
+        level: "bronze",
+        name: "Sonny's BBQ\nThomasville, GA",
+        url: "https://www.sonnysbbq.com/",
+        logo: "sonny.jpg"
+    },
+
     // DISABLED //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -453,13 +482,6 @@ data.sponsors = [
         name: "The Avenues\nReal Estate Partners",
         url: "http://theavenuesrealestate.com/",
         logo: "avenues.png",
-        disabled: true
-    },
-    {
-        level: "bronze",
-        name: "Potty Man\nPortable Toilet Rentals",
-        url: "https://pottyman.net/",
-        logo: "pottyman.png",
         disabled: true
     },
 
