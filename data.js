@@ -250,7 +250,7 @@ data.sponsors = [
     {
         level: "bronze",
         name: "Cooper’s Plumbing & Air",
-        url: "https://www.amerisbank.com/",
+        url: "https://www.coopersheatingandair.com/",
         logo: "coopers.png"
     },
 
@@ -297,6 +297,56 @@ data.sponsors = [
         logo: "susie.png"
     },
 
+    {
+        level: "silver",
+        name: "J. Smith Lanier & Co.\nA Marsh & McLennan Agency LLC company",
+        url: "http://www.jsmithlanier.com/",
+        logo: "jsmith.jpg"
+    },
+
+    {
+        level: "bronze",
+        name: "Element Style Bar",
+        url: "https://www.facebook.com/laurendeeabbey/",
+        logo: "element.png"
+    },
+
+    {
+        level: "bronze",
+        name: "TC Federal Bank",
+        url: "https://www.tcfederal.com/",
+        logo: "tcf.png"
+    },
+
+    {
+        level: "bronze",
+        name: "Henderson's Restaurant",
+        url: "http://hendersonsofthomasville.com/",
+        logo: "hendersons.svg"
+    },
+
+    {
+        level: "bronze",
+        name: "Sampson's Paint and Decorating",
+        url: "http://paintstore.benjaminmoore.com/stores/us/ga/thomasville/sampsons-paint-decorating-inc?lang=en_CA",
+        logo: "sampsons.png",
+        tiny: true
+    },
+
+    {
+        level: "bronze",
+        name: "Thomasville National Bank\nTNB Financial",
+        url: "https://tnbank.com/",
+        logo: "tnbboth.png"
+    },
+
+    {
+        level: "bronze",
+        name: "oilon",
+        url: "https://oilon.com/",
+        logo: "oilon.png"
+    },
+
     // DISABLED //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -312,13 +362,6 @@ data.sponsors = [
         name: "Wendy's",
         url: "https://www.wendys.com/",
         logo: "wendys.png",
-        disabled: true
-    },
-    {
-        level: "silver",
-        name: "J. Smith Lanier & Co.\nA Marsh & McLennan Agency LLC company",
-        url: "http://www.jsmithlanier.com/",
-        logo: "jsmith.jpg",
         disabled: true
     },
     {
@@ -349,13 +392,7 @@ data.sponsors = [
         logo: "",
         disabled: true
     },
-    {
-        level: "bronze",
-        name: "Element Style Bar",
-        url: "https://www.facebook.com/laurendeeabbey/",
-        logo: "element.png",
-        disabled: true
-    },
+
 
     {
         level: "bronze",
@@ -373,21 +410,6 @@ data.sponsors = [
         disabled: true
     },
 
-    {
-        level: "bronze",
-        name: "Henderson's Restaurant",
-        url: "http://hendersonsofthomasville.com/",
-        logo: "hendersons.svg",
-        disabled: true
-    },
-    {
-        level: "bronze",
-        name: "Sampson's Paint and Decorating",
-        url: "http://paintstore.benjaminmoore.com/stores/us/ga/thomasville/sampsons-paint-decorating-inc?lang=en_CA",
-        logo: "sampsons.png",
-        tiny: true,
-        disabled: true
-    },
     {
         level: "bronze",
         name: "State Farm\nPatrick Scarborough",
@@ -440,20 +462,7 @@ data.sponsors = [
         logo: "pottyman.png",
         disabled: true
     },
-    {
-        level: "bronze",
-        name: "TC Federal Bank",
-        url: "https://www.tcfederal.com/",
-        logo: "tcf.png",
-        disabled: true
-    },
-    {
-        level: "bronze",
-        name: "Thomasville National Bank\nTNB Financial",
-        url: "https://tnbank.com/",
-        logo: "tnbboth.png",
-        disabled: true
-    },
+
     {
         level: "bronze",
         name: "Collins Pecan",
