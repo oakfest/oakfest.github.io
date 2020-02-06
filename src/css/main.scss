@@ -217,16 +217,6 @@ section, footer {
     }
   }
 }
-
-.nimble-logo {
-  &:hover {
-    img {
-      transform: rotate(10deg);
-      animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-    }
-  }
-}
-
 .call-to-action .btn {
   display: block;
   margin: 50px;
@@ -261,5 +251,66 @@ section, footer {
 
   .no-wrap {
     white-space: normal !important;
+  }
+}
+
+.social {
+  a {
+    display: inline-block;
+    margin: 5px;
+
+    &:hover {
+      svg {
+        transform: rotate(10deg);
+        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+      }
+      img {
+        transform: rotate(10deg);
+        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+      }
+    }
+  }
+
+  .fa-facebook-square {
+    color: #3b5998;
+  }
+
+  .fa-github {
+    color: #24292e;
+  }
+
+  .fa-spotify {
+    color: #1DB954
+  }
+
+  .fa-envelope {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 2.8em;
+    background: #239898;
+    border-radius: 10px 10px;
+  }
+
+  .fa-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    border-radius: 10px 10px;
+    font-size: 2.8em !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
+
+  .nimble-logo {
+    background: #401d84;
+    border-radius: 10px 10px;
+    height: 35px;
+    padding: 5px;
+
+    img {
+      height: 100%;
+    }
   }
 }

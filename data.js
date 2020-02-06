@@ -21,6 +21,17 @@ const data = {
     ticketPrice: "20",
     ticketsDate: 'February 4th, 2020',
 
+    volunteer: 'https://www.signupgenius.com/go/4090f48aead22a7fa7-oakfest2',
+
+    socials: {
+        spotify: 'https://open.spotify.com/playlist/3qWgmRTzYrCXwnJ2ttU2li',
+        facebook: 'https://www.facebook.com/events/220858818929192/',
+        instagram: 'https://www.instagram.com/kiwanis.satellite',
+        email: 'contact@oakfest.net',
+        nimble: 'https://nimblecms.com',
+        github: 'https://github.com/oakfest',
+    },
+
     iso: {
         start: "2020-03-14T16:00-05:00",
         end: "2020-03-14T22:00-05:00",
@@ -142,6 +153,32 @@ data.faqs = {
         One ticket=one drink. <br/> 
         We will have a separate table for drink ticket purchases (your ID will be checked at the gate where you
         will receive an additional armband that signifies you are of drinking age).
+    `,
+
+    'How can I help?': {
+        'Donation or Sponsorship': [
+            ` You can donate or sponsor by contacting us at <a href="mailto:contact@oakfest.net">contact@oakfest.net</a>`,
+            `
+                Sponsorships come with tickets, meal, VIP access, drink tickets, and branding on marketing materials. 
+                Contact us for more information on sponsor levels.
+             `,
+            'We also accept in-kind donations',
+            `100% of profits go to Treehouse`
+        ],
+        'Volunteer': [
+            `<a href="${data.volunteer}">Click here to sign-up to volunteer</a>`,
+        ]
+    },
+
+    'When do Volunteers need to show up?': [
+        `<a href="${data.volunteer}">Click here to sign up for a shift</a>`,
+        '1:00pm shift will need to arrive promptly at 1:00.',
+        '3:00pm shift will need to arrive at 2:15.',
+        'Remaining shifts need to arrive 30 minutes prior to their start time.'
+    ],
+
+    'Do volunteers get free entry?': `
+        As a thank you for volunteering, you will be granted free entry into the event and dinner provided by Sonny's BBQ!
     `
 };
 

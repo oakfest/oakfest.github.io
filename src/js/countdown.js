@@ -1,9 +1,8 @@
 export default function (endDate, parentId, daysId, hoursId, minutesId, secondsId) {
     const count = document.getElementById(parentId);
 
-    count.style.display = 'block';
-
     if (count) {
+        count.style.display = 'block';
         const daysEl = document.getElementById(daysId);
         const hoursEl = document.getElementById(hoursId);
         const minutesEl = document.getElementById(minutesId);
