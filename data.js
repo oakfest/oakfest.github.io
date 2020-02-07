@@ -268,6 +268,13 @@ data.sponsors = [
         logo: "rodd.png"
     },
 
+    {
+        level: "silver",
+        name: "Long & Company CPA's LLC",
+        url: "https://www.longcocpa.com/",
+        logo: ""
+    },
+
     // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -465,14 +472,6 @@ data.sponsors = [
         logo: "factor.png",
         disabled: true
     },
-    {
-        level: "silver",
-        name: "Long & Company CPA's LLC",
-        url: "https://www.longcocpa.com/",
-        logo: "",
-        disabled: true
-    },
-
 
     {
         level: "bronze",
