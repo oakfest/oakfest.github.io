@@ -1,7 +1,8 @@
 import '../css/main.scss'
 
-import Tracker from './tracking.js'
+import Tracker from './tracking'
 import countdown from "./countdown";
+import data from '../../data'
 
 // initialize tracker
 const tracker = new Tracker();
@@ -12,7 +13,7 @@ window.oak = {
 
 // initialize countdown
 countdown(
-    new Date('March 14, 2020 15:30:00 EST'),
+    new Date(data.iso.start),
     'countdown',
     'count-days',
     'count-hours',
