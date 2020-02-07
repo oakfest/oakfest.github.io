@@ -261,6 +261,13 @@ data.sponsors = [
         logo: "carroll.png"
     },
 
+    {
+        level: "silver",
+        name: "The Rodd Firm",
+        url: "https://www.roddfirm.com/",
+        logo: "rodd.png"
+    },
+
     // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -411,6 +418,13 @@ data.sponsors = [
         name: "Sonny's BBQ\nThomasville, GA",
         url: "https://www.sonnysbbq.com/",
         logo: "sonny.jpg"
+    },
+
+    {
+        level: "bronze",
+        name: "His Daughter Boutique",
+        url: "https://hisdaughterboutique.com/",
+        logo: "hisdaughter.png"
     },
 
     // DISABLED //////////////////////////////////////////////////////////////////////////////////////////////
