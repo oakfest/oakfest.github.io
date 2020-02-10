@@ -275,6 +275,13 @@ data.sponsors = [
         logo: ""
     },
 
+    {
+        level: "silver",
+        name: "KeySouth Real Estate Group",
+        url: 'https://keysouth.com/',
+        logo: 'keysouth.png'
+    },
+
     // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
