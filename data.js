@@ -209,6 +209,14 @@ data.sponsors = [
         logo: ""
     },
 
+    {
+        level: "gold",
+        name: "Whelchel & Carlton, LLP",
+        url: "https://www.wcgalaw.com/",
+        logo: "wc.png",
+        tiny: true
+    },
+
     // SILVER //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
