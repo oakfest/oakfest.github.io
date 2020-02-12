@@ -289,6 +289,21 @@ data.sponsors = [
         logo: 'keysouth.png'
     },
 
+    {
+        level: "silver",
+        name: "Wendy's",
+        url: "https://www.wendys.com/",
+        logo: "wendys.png"
+    },
+    
+    {
+        level: "silver",
+        name: "Hurst Boiler",
+        url: "https://www.hurstboiler.com/",
+        logo: "hurst.png"
+    },
+
+
     // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -448,6 +463,30 @@ data.sponsors = [
         logo: "hisdaughter.png"
     },
 
+    {
+        level: "bronze",
+        name: "AgPro Companies",
+        url: "https://www.agprocompanies.com/",
+        logo: "agpro.png",
+        tiny: true,
+    },
+
+    {
+        level: "bronze",
+        name: "Full Circle Lawn & Landscaping LLC",
+        url: "http://fullcirclelawnandlandscaping.com/",
+        logo: "fullcircle.jpg",
+        tiny: true
+    },
+
+
+    {
+        level: "bronze",
+        name: "Dudley Moore\nAwnings & Floor Coverings, INC",
+        url: "https://www.dudleymoorefloors.com/",
+        logo: "dudley.png",
+    },
+    
     // DISABLED //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -458,13 +497,6 @@ data.sponsors = [
         disabled: true
     },
 
-    {
-        level: "silver",
-        name: "Wendy's",
-        url: "https://www.wendys.com/",
-        logo: "wendys.png",
-        disabled: true
-    },
     {
         level: "silver",
         name: "Cives Steel Company",
@@ -510,14 +542,7 @@ data.sponsors = [
         logo: "state-farm.svg",
         disabled: true
     },
-    {
-        level: "bronze",
-        name: "AgPro Companies",
-        url: "https://www.agprocompanies.com/",
-        logo: "agpro.png",
-        tiny: true,
-        disabled: true
-    },
+      
     {
         level: "bronze",
         name: "Teramore Development",
@@ -526,6 +551,7 @@ data.sponsors = [
         tiny: true,
         disabled: true
     },
+    
     {
         level: "bronze",
         name: "Nutrien Ag Solutions",
@@ -533,6 +559,7 @@ data.sponsors = [
         logo: "nutrien.png",
         disabled: true
     },
+    
     {
         level: "bronze",
         name: "Lanigan & Associates P.C.",
