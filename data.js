@@ -215,6 +215,13 @@ data.sponsors = [
         url: "https://www.wcgalaw.com/",
         logo: "wc.png"
     },
+    
+    {
+        level: "gold",
+        name: "CCH Construction",
+        url: "https://cch-construction.com/",
+        logo: "cch.gif",
+    },
 
     // SILVER //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -303,6 +310,19 @@ data.sponsors = [
         logo: "hurst.png"
     },
 
+    {
+        level: "silver",
+        name: "Synovus Bank",
+        url: "https://synovus.com",
+        logo: "synovus.png"
+    },
+
+    {
+        level: "silver",
+        name: "Cives Steel Company",
+        url: "http://www.cives.com/southern",
+        logo: "cives.png",
+    },
 
     // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -486,7 +506,35 @@ data.sponsors = [
         url: "https://www.dudleymoorefloors.com/",
         logo: "dudley.png",
     },
+     
+    {
+        level: "bronze",
+        name: "Caldwell & Langford Insurance",
+        url: "http://caldwellandlangford.com/",
+        logo: "caldwell.svg",
+    },
     
+    {
+        level: "bronze",
+        name: "Nutrien Ag Solutions",
+        url: "https://www.nutrienagsolutions.com/",
+        logo: "nutrien.png",
+    },
+
+    {
+        level: "bronze",
+        name: "Ashley & Tommy Gibbs",
+        url: "#",
+        logo: "",
+    },
+
+    {
+        level: "bronze",
+        name: "Hannah Orr",
+        url: "#",
+        logo: "",
+    },
+
     // DISABLED //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -499,18 +547,12 @@ data.sponsors = [
 
     {
         level: "silver",
-        name: "Cives Steel Company",
-        url: "http://www.cives.com/southern",
-        logo: "cives.png",
-        disabled: true
-    },
-    {
-        level: "silver",
         name: "Cleaver Brooks\nComplete Boiler Room Solutions",
         url: "http://www.cleaverbrooks.com/",
         logo: "cleaver.png",
         disabled: true
     },
+    
     {
         level: "silver",
         name: "Factor X Fitness",
@@ -518,23 +560,7 @@ data.sponsors = [
         logo: "factor.png",
         disabled: true
     },
-
-    {
-        level: "bronze",
-        name: "Synovus Bank",
-        url: "https://synovus.com",
-        logo: "synovus.png",
-        disabled: true
-    },
-
-    {
-        level: "bronze",
-        name: "Caldwell & Langford Insurance",
-        url: "http://caldwellandlangford.com/",
-        logo: "caldwell.svg",
-        disabled: true
-    },
-
+   
     {
         level: "bronze",
         name: "State Farm\nPatrick Scarborough",
@@ -551,15 +577,7 @@ data.sponsors = [
         tiny: true,
         disabled: true
     },
-    
-    {
-        level: "bronze",
-        name: "Nutrien Ag Solutions",
-        url: "https://www.nutrienagsolutions.com/",
-        logo: "nutrien.png",
-        disabled: true
-    },
-    
+        
     {
         level: "bronze",
         name: "Lanigan & Associates P.C.",
