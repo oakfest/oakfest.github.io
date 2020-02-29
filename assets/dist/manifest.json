@@ -1,6 +1,6 @@
 {
-  "oak.min.css": "/assets/dist/oak.min.60900dd039c568fbe19b.css",
-  "oak.min.js": "/assets/dist/oak.min.60900dd039c568fbe19b.js",
+  "oak.min.css": "/assets/dist/oak.min.fca4786ae0510cc832f4.css",
+  "oak.min.js": "/assets/dist/oak.min.fca4786ae0510cc832f4.js",
   "../../faqs/index.html": "/assets/dist/../../faqs/index.html",
   "../../index.html": "/assets/dist/../../index.html",
   "../../sponsors/index.html": "/assets/dist/../../sponsors/index.html",
@@ -15,8 +15,10 @@
   "pfg.png": "/assets/dist/11e7a2017f8d854776ecde7cfeec6026.png",
   "favicon-60x60.png": "/assets/dist/12c04d9ff3946f7f38c208e2d9dbf311.png",
   "hh.jpg": "/assets/dist/13eb8ce1ff4547350871adf48ecf6bfd.jpg",
+  "labro.jpg": "/assets/dist/19e7734e5209bd05f7aca39eb97ab528.jpg",
   "alex.png": "/assets/dist/1e0369ec64ef3c32c12cda1a8c51f882.png",
   "state-farm.svg": "/assets/dist/1ea033f60ce7e2fe69521a20d8e7d207.svg",
+  "williamscpa.svg": "/assets/dist/1facfc29c6db240a018b1c271ed04f14.svg",
   "wbw.svg": "/assets/dist/24105b84325db001dc3c23f09dbf30f0.svg",
   "pottyman.png": "/assets/dist/253e5217f72b57ee2203ce728e990c0f.png",
   "favicon-57x57.png": "/assets/dist/2917e3dbfe323ec502745dd879d26ced.png",
@@ -24,6 +26,7 @@
   "mcintosh.jpg": "/assets/dist/2d3f5969d95e5b5de9d1da78e625e2d8.jpg",
   "favicon.png": "/assets/dist/2f8c046bfc34862cc512da46877cfa7c.png",
   "sampsons.png": "/assets/dist/35ceab8049091ef7bc843af7fb9ecbb9.png",
+  "tnt.png": "/assets/dist/364f36c079ee98b6f92af02795090f79.png",
   "favicon-32x32.png": "/assets/dist/38fb408451cae77f7bfcf8cdcdd48f4b.png",
   "favicon-180x180.png": "/assets/dist/402be9dd0341bbbe5cbca5dff7e14954.png",
   "cns.svg": "/assets/dist/41346bacc4b1b0e55c92e663d7631d54.svg",
@@ -49,6 +52,7 @@
   "caldwell.svg": "/assets/dist/87b2ba785a9cb558f3a13c61214d233b.svg",
   "jsmith.jpg": "/assets/dist/91f9a9fcad95a4b9f599b58ce0b8999d.jpg",
   "tbr.svg": "/assets/dist/9484dc7729ec1db389931bffdd6c091e.svg",
+  "billysplace.jpg": "/assets/dist/96c836740d4359b02fc97a0859c6e77a.jpg",
   "thomasville.png": "/assets/dist/9be4834672229b77a1e8a22f6cd2f895.png",
   "sonny.jpg": "/assets/dist/9cfc240f92dd5c1b971e396a62412248.jpg",
   "favicon-96x96.png": "/assets/dist/9d4f7d1eb1c3af5f4a858d45abd903e9.png",
@@ -62,6 +66,7 @@
   "coopers.png": "/assets/dist/c21dc70cf87b674d2d59a627873c8786.png",
   "bills.png": "/assets/dist/c34f2ea85e6d790e2acd945e8019df36.png",
   "danny.png": "/assets/dist/c59569e1ae2ffe76335a3bb27c2384c7.png",
+  "rose.webp": "/assets/dist/caebf1d6fa13d46be0d7cb272d4861ba.webp",
   "hurst.png": "/assets/dist/cd4d81fc213f89063a3e448c08056e3f.png",
   "favicon-72x72.png": "/assets/dist/d10474eebfd7839ebee30c8d177d860f.png",
   "liberty.png": "/assets/dist/d10ceea8d2c927648f7c57dac9a10a4d.png",
@@ -77,5 +82,6 @@
   "tnbboth.png": "/assets/dist/ea782504c0386e0f68c622f15fac86d7.png",
   "favicon-192x192.png": "/assets/dist/ecebdb82a4a80471bbc21f2fcf55fe4e.png",
   "synovus.png": "/assets/dist/f140700a030309496368340f5adc66f6.png",
-  "gfb.svg": "/assets/dist/f5237ea520311a16ade9e14a890fffc9.svg"
+  "gfb.svg": "/assets/dist/f5237ea520311a16ade9e14a890fffc9.svg",
+  "jc.jpg": "/assets/dist/fbee7aa99bf288f980fc6e28bfc77a38.jpg"
 }
