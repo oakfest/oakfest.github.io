@@ -223,6 +223,14 @@ data.sponsors = [
         logo: "cch.gif",
     },
 
+    {
+        level: "gold",
+        name: "Brad Shealy\nDistrict Attorney",
+        url: "https://www.lowndescounty.com/directory.aspx?EID=76",
+        logo: "",
+    },
+
+
     // SILVER //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -323,6 +331,14 @@ data.sponsors = [
         url: "http://www.cives.com/southern",
         logo: "cives.png",
     },
+
+    {
+        level: "silver",
+        name: "Thomasville Ford\nThomasville Toyota",
+        url: "http://www.thomasvilletoyota.com",
+        logo: "toyota-ford.png",
+    },
+
 
     // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -538,6 +554,13 @@ data.sponsors = [
     {
         level: "bronze",
         name: "Matthew T Shiner",
+        url: "#",
+        logo: "",
+    },
+
+    {
+        level: "bronze",
+        name: "Labra Development",
         url: "#",
         logo: "",
     },
