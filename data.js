@@ -339,6 +339,19 @@ data.sponsors = [
         logo: "toyota-ford.png",
     },
 
+    {
+        level: "silver",
+        name: "Taylor Benefit Resource",
+        url: "http://www.tbrtpa.com/",
+        logo: "tbr.svg",
+    },
+    
+    {
+        level: "silver",
+        name: "Rose City Outdoor",
+        url: "https://www.rosecityoutdoor.com/",
+        logo: "rose.webp",
+    },
 
     // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -532,13 +545,6 @@ data.sponsors = [
     
     {
         level: "bronze",
-        name: "Nutrien Ag Solutions",
-        url: "https://www.nutrienagsolutions.com/",
-        logo: "nutrien.png",
-    },
-
-    {
-        level: "bronze",
         name: "Ashley & Tommy Gibbs",
         url: "#",
         logo: "",
@@ -557,22 +563,96 @@ data.sponsors = [
         url: "#",
         logo: "",
     },
+    
+    {
+        level: "bronze",
+        name: "Teramore Development",
+        url: "http://www.teramore.net/",
+        logo: "teramore.png",
+        tiny: true,
+    },
+    
+    {
+        level: "bronze",
+        name: "The Avenues\nReal Estate Partners",
+        url: "http://theavenuesrealestate.com/",
+        logo: "avenues.png",
+    },
+
+    {
+	level: "bronze",
+	name: "Labro Development, LLC.",
+	url: "https://www.facebook.com/Labro-Development-LLC-1908932179378456",
+	logo: "labro.jpg",
+	tiny: true
+    },
+
+    {
+	level: "bronze",
+	name: "TNT Supercenter",
+	url: "https://www.tntsupercenter.com/",
+	logo: "tnt.png"
+    },
+    
+    {
+	level: "bronze",
+	name: "Dylan Williams, CPA",
+	url: "http://www.williamscpa.us",
+	logo: "williamscpa.svg"
+    },
+ 
+    {
+	level: "bronze",
+	name: "Billy's Place",
+	url: "https://www.facebook.com/Billysplaceochlocknee/photos/a.768776103248056/768776109914722/?type=3&theater",
+	logo: "billysplace.jpg",
+	tiny: true
+    },
 
     {
         level: "bronze",
-        name: "Labra Development",
-        url: "#",
-        logo: "",
+        name: "Performance Food Group",
+        url: "http://www.pfgc.com/",
+        logo: "pfg.png",
+    },
+    
+    {
+        level: "bronze",
+        name: "J & C Fence Company",
+        url: "https://www.houzz.com/professionals/fencing-and-gate-sales-and-construction/j-and-c-fence-company-pfvwus-pf~311769106",
+        logo: "jc.jpg",
     },
 
-    // DISABLED //////////////////////////////////////////////////////////////////////////////////////////////
+    {
+        level: "bronze",
+        name: "State Farm\nPatrick Scarborough\nStephen Gainous",
+        url: "https://www.tvilleinsurance.com/",
+        logo: "state-farm.svg"
+    },
+   
+    {
+        level: "bronze",
+        name: "Williams Electric",
+        url: "http://wesgenerators.com/",
+        logo: ""
+    },
 
     {
-        level: "silver",
-        name: "Taylor Benefit Resource",
-        url: "http://www.tbrtpa.com/",
-        logo: "tbr.svg",
-        disabled: true
+        level: "bronze",
+        url: "http://autoairofthomasville.com",
+        name: "Auto Air",
+        logo: "autoair.png"
+    },
+
+
+    // DISABLED //////////////////////////////////////////////////////////////////////////////////////////////
+    
+    {
+        level: "bronze",
+        name: "Nutrien Ag Solutions",
+        url: "https://www.nutrienagsolutions.com/",
+        logo: "nutrien.png",
+	disabled: true
     },
 
     {
@@ -591,23 +671,7 @@ data.sponsors = [
         disabled: true
     },
    
-    {
-        level: "bronze",
-        name: "State Farm\nPatrick Scarborough",
-        url: "https://www.tvilleinsurance.com/",
-        logo: "state-farm.svg",
-        disabled: true
-    },
-      
-    {
-        level: "bronze",
-        name: "Teramore Development",
-        url: "http://www.teramore.net/",
-        logo: "teramore.png",
-        tiny: true,
-        disabled: true
-    },
-        
+                 
     {
         level: "bronze",
         name: "Lanigan & Associates P.C.",
@@ -615,15 +679,7 @@ data.sponsors = [
         logo: "lanigan.svg",
         disabled: true
     },
-
-    {
-        level: "bronze",
-        name: "The Avenues\nReal Estate Partners",
-        url: "http://theavenuesrealestate.com/",
-        logo: "avenues.png",
-        disabled: true
-    },
-
+ 
     {
         level: "bronze",
         name: "Collins Pecan",
@@ -631,13 +687,7 @@ data.sponsors = [
         logo: "collins.png",
         disabled: true
     },
-    {
-        level: "bronze",
-        name: "Performance Food Group",
-        url: "http://www.pfgc.com/",
-        logo: "pfg.png",
-        disabled: true
-    },
+   
     {
         level: "bronze",
         name: "Joey's Landscape and Lawn Care Services,\nLLC.",
@@ -645,13 +695,7 @@ data.sponsors = [
         logo: "jlls.png",
         disabled: true
     },
-    {
-        level: "bronze",
-        name: "Network Technology Solutions",
-        url: "https://ntsnetworks.com",
-        logo: "nts.svg",
-        disabled: true
-    },
+ 
     {
         level: "bronze",
         name: "Three Toms Tavern",
@@ -659,6 +703,7 @@ data.sponsors = [
         logo: "",
         disabled: true
     },
+    
     {
         level: "bronze",
         name: "The Orr Family",
