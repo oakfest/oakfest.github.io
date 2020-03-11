@@ -352,7 +352,14 @@ data.sponsors = [
         url: "https://www.rosecityoutdoor.com/",
         logo: "rose.webp",
     },
-
+    
+    {
+        level: "silver",
+        name: "Three Toms Tavern",
+        url: "#",
+        logo: "",
+    },
+    
     // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -696,14 +703,6 @@ data.sponsors = [
         disabled: true
     },
  
-    {
-        level: "bronze",
-        name: "Three Toms Tavern",
-        url: "#",
-        logo: "",
-        disabled: true
-    },
-    
     {
         level: "bronze",
         name: "The Orr Family",
