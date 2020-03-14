@@ -215,7 +215,7 @@ data.sponsors = [
         url: "https://www.wcgalaw.com/",
         logo: "wc.png"
     },
-    
+
     {
         level: "gold",
         name: "CCH Construction",
@@ -310,7 +310,7 @@ data.sponsors = [
         url: "https://www.wendys.com/",
         logo: "wendys.png"
     },
-    
+
     {
         level: "silver",
         name: "Hurst Boiler",
@@ -345,21 +345,21 @@ data.sponsors = [
         url: "http://www.tbrtpa.com/",
         logo: "tbr.svg",
     },
-    
+
     {
         level: "silver",
         name: "Rose City Outdoor",
         url: "https://www.rosecityoutdoor.com/",
         logo: "rose.webp",
     },
-    
+
     {
         level: "silver",
         name: "Three Toms Tavern",
         url: "#",
         logo: "",
     },
-    
+
     // BRONZE //////////////////////////////////////////////////////////////////////////////////////////////
 
     {
@@ -507,13 +507,6 @@ data.sponsors = [
 
     {
         level: "bronze",
-        name: "Sonny's BBQ\nThomasville, GA",
-        url: "https://www.sonnysbbq.com/",
-        logo: "sonny.jpg"
-    },
-
-    {
-        level: "bronze",
         name: "His Daughter Boutique",
         url: "https://hisdaughterboutique.com/",
         logo: "hisdaughter.png"
@@ -542,14 +535,14 @@ data.sponsors = [
         url: "https://www.dudleymoorefloors.com/",
         logo: "dudley.png",
     },
-     
+
     {
         level: "bronze",
         name: "Caldwell & Langford Insurance",
         url: "http://caldwellandlangford.com/",
         logo: "caldwell.svg",
     },
-    
+
     {
         level: "bronze",
         name: "Ashley & Tommy Gibbs",
@@ -570,7 +563,7 @@ data.sponsors = [
         url: "#",
         logo: "",
     },
-    
+
     {
         level: "bronze",
         name: "Teramore Development",
@@ -578,7 +571,7 @@ data.sponsors = [
         logo: "teramore.png",
         tiny: true,
     },
-    
+
     {
         level: "bronze",
         name: "The Avenues\nReal Estate Partners",
@@ -587,33 +580,33 @@ data.sponsors = [
     },
 
     {
-	level: "bronze",
-	name: "Labro Development, LLC.",
-	url: "https://www.facebook.com/Labro-Development-LLC-1908932179378456",
-	logo: "labro.jpg",
-	tiny: true
+        level: "bronze",
+        name: "Labro Development, LLC.",
+        url: "https://www.facebook.com/Labro-Development-LLC-1908932179378456",
+        logo: "labro.jpg",
+        tiny: true
     },
 
     {
-	level: "bronze",
-	name: "TNT Supercenter",
-	url: "https://www.tntsupercenter.com/",
-	logo: "tnt.png"
+        level: "bronze",
+        name: "TNT Supercenter",
+        url: "https://www.tntsupercenter.com/",
+        logo: "tnt.png"
     },
-    
+
     {
-	level: "bronze",
-	name: "Dylan Williams, CPA",
-	url: "http://www.williamscpa.us",
-	logo: "williamscpa.svg"
+        level: "bronze",
+        name: "Dylan Williams, CPA",
+        url: "http://www.williamscpa.us",
+        logo: "williamscpa.svg"
     },
- 
+
     {
-	level: "bronze",
-	name: "Billy's Place",
-	url: "https://www.facebook.com/Billysplaceochlocknee/photos/a.768776103248056/768776109914722/?type=3&theater",
-	logo: "billysplace.jpg",
-	tiny: true
+        level: "bronze",
+        name: "Billy's Place",
+        url: "https://www.facebook.com/Billysplaceochlocknee/photos/a.768776103248056/768776109914722/?type=3&theater",
+        logo: "billysplace.jpg",
+        tiny: true
     },
 
     {
@@ -622,7 +615,7 @@ data.sponsors = [
         url: "http://www.pfgc.com/",
         logo: "pfg.png",
     },
-    
+
     {
         level: "bronze",
         name: "J & C Fence Company",
@@ -636,7 +629,7 @@ data.sponsors = [
         url: "https://www.tvilleinsurance.com/",
         logo: "state-farm.svg"
     },
-   
+
     {
         level: "bronze",
         name: "Williams Electric",
@@ -653,13 +646,13 @@ data.sponsors = [
 
 
     // DISABLED //////////////////////////////////////////////////////////////////////////////////////////////
-    
+
     {
         level: "bronze",
         name: "Nutrien Ag Solutions",
         url: "https://www.nutrienagsolutions.com/",
         logo: "nutrien.png",
-	disabled: true
+        disabled: true
     },
 
     {
@@ -669,7 +662,7 @@ data.sponsors = [
         logo: "cleaver.png",
         disabled: true
     },
-    
+
     {
         level: "silver",
         name: "Factor X Fitness",
@@ -677,8 +670,8 @@ data.sponsors = [
         logo: "factor.png",
         disabled: true
     },
-   
-                 
+
+
     {
         level: "bronze",
         name: "Lanigan & Associates P.C.",
@@ -686,7 +679,7 @@ data.sponsors = [
         logo: "lanigan.svg",
         disabled: true
     },
- 
+
     {
         level: "bronze",
         name: "Collins Pecan",
@@ -694,7 +687,7 @@ data.sponsors = [
         logo: "collins.png",
         disabled: true
     },
-   
+
     {
         level: "bronze",
         name: "Joey's Landscape and Lawn Care Services,\nLLC.",
@@ -702,7 +695,7 @@ data.sponsors = [
         logo: "jlls.png",
         disabled: true
     },
- 
+
     {
         level: "bronze",
         name: "The Orr Family",
@@ -716,7 +709,15 @@ data.sponsors = [
         url: "#",
         logo: "",
         disabled: true
-    }
+    },
+
+    {
+        level: "bronze",
+        name: "Sonny's BBQ\nThomasville, GA",
+        url: "https://www.sonnysbbq.com/",
+        logo: "sonny.jpg",
+        disabled: true
+    },
 ];
 
 

@@ -32,6 +32,12 @@ a, .tickets-btn {
   cursor: pointer;
 }
 
+.notice {
+  width: 50%;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
 .btn {
   margin: 20px;
   padding: 20px;
@@ -217,12 +223,16 @@ section, footer {
     }
   }
 }
+
 .call-to-action .btn {
   display: block;
   margin: 50px;
 }
 
 @media screen and (max-width: 800px) {
+  .notice {
+    width: 90% !important;
+  }
 
   h1 {
     text-align: center !important;
@@ -264,6 +274,7 @@ section, footer {
         transform: rotate(10deg);
         animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
       }
+
       img {
         transform: rotate(10deg);
         animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
